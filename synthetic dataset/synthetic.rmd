@@ -9,11 +9,12 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This RMD file is built for the synthetic data simulation for the glaicial-volcanism interaction project by Emily Mixon and Shan Ye. You can run each block of R codes by clicking on the green triangle on the top right cornor of that block.
+This RMD file is built for the synthetic data simulation for the glaicial-volcanism interaction project by Emily Mixon and Shan Ye. You can run each block of R codes by clicking on the green triangle on the top right of that block.
 
 # Beginning the main file
 
-Setting up the function that generates a synthetic data
+Setting up the function that generates a synthetic data.
+Click the green triangle, and you will set up this function, which will be called in the next function.
 
 ```{r}
 synthetic_gen <- function(background, peak){
@@ -69,6 +70,9 @@ synthetic_gen <- function(background, peak){
 ```
 
 Setting up the function for the Monte Carlo simulation with options of different fitting curves.
+Click the green triangle, and you will set up a function that can:
+1) Generate synthetic data for a number of times based on your need (will be specified in the next step)
+2) Conduct the Monte Carlo simulation by filtering the synthetic data based on your options (also will be specified in the next step)
 
 ```{r}
 mc_syn <- function(type, p, run, background, peak){
@@ -274,6 +278,8 @@ linearDF <- mc_syn("linear", 0.25, 100, 5, 30)
 invereseDF <- mc_syn("inverse", 0.1, 100, 5, 25)
 logDF <- mc_syn("log", 0.25, 100, 3, 30)
 errorExample <- mc_syn("shan", 0.25, 100, 10, 30)
+
+Change the line of code below based on your option, and click the green triangle. Note: you have to run those 2 previous blocks before running the following one. You will find the result in a plot below, and a data frame in the Environment section of the RStudio interface.
 
 ```{r}
 linearDF <- mc_syn("linear", 0.25, 100, 5, 30)
