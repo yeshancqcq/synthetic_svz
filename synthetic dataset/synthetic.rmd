@@ -1,0 +1,282 @@
+---
+title: "Synthetic Simulation of SVZ"
+author: "Shan Ye"
+date: "July 24, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This RMD file is built for the synthetic data simulation for the glaicial-volcanism interaction project by Emily Mixon and Shan Ye. You can run each block of R codes by clicking on the green triangle on the top right cornor of that block.
+
+# Beginning the main file
+
+Setting up the function that generates a synthetic data
+
+```{r}
+synthetic_gen <- function(background, peak){
+  
+  bg <- background
+  pk <- peak
+  
+  library(ggplot2)
+  
+  # Initiating a new data.frame for the synthetic data
+  syn <- data.frame(ka = c(1:180))
+  syn$yearsBP <- NA
+  for (i in 1:nrow(syn)){
+    syn$yearsBP[i] <- syn$ka[i] * 1000
+  }
+  
+  # Generating the synthetic data
+  # method:
+  # 1) Background noise = 5 +/- 4;
+  #    The variation is based on the normal distribution
+  #    using rnorm(1, mean=5, sd=2) function with as.integer()function
+  #    which is: as.integer(rnorm(1, mean=5, sd=2))
+  # 2) Peaks at interglacial periods:
+  #    when ka -> (14, 18) OR (123, 127)
+  # 3) Data at peaks = 30 +/- 5
+  #    which is: as.integer(rnorm(1, mean=30, sd=2.5))
+  syn$events <- NA
+  
+  for (i in 1:nrow(syn)){
+    if(isTRUE(i>=14 && i<=18) || isTRUE(i>=123 && i<=127)){
+      syn$events[i] <- as.integer(rnorm(1, mean=pk, sd=2.5))
+    } else {
+      syn$events[i] <- as.integer(rnorm(1, mean=bg, sd=2))
+    }
+  }
+  
+  # plot to see the synthetic data
+  
+  plot <- ggplot()+
+    geom_line(data=syn, aes(x=syn$ka, y=syn$events))+
+    scale_x_reverse(limits = c(180, 0),breaks = scales::pretty_breaks(n = 18)) +
+    ggtitle("Synthetic data") +
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+          panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+    labs(y = "Events",
+         x = "Ka")
+  
+  plot
+  
+  return(syn)
+}
+
+```
+
+Setting up the function for the Monte Carlo simulation with options of different fitting curves.
+
+```{r}
+mc_syn <- function(type, p, run, background, peak){
+  
+  require(stringdist)
+  
+  #df <- syn
+  #p <- 0.1
+  #run <- 100
+  
+  
+  bg <- background
+  pk <- peak
+  #type <-"linear"
+  
+  # Initiating the output data frame
+  output <- data.frame(ka = c(1:180))
+  
+  if(type %in% "linear"){
+    
+    for(mc in 1:run){
+      # generate a new synthetic dataset
+      df <- synthetic_gen(bg, pk)
+      
+      # calculate the number of events preserved in each time period
+      output$nextrun <- NA
+      df$prob <- NA
+      
+      # In the linear case, the fitting curve y = kx + b passes through (0,1) and (180, p)
+      # Therefore:
+      # b = 1 and 180k + 1 = p
+      # solve: k = (p-1)/180
+      # And the curve is: y = (p-1) * x / 180 + 1 where y is the prob and x is ka
+      # And the number of preserved events is y * df$events[i]
+      
+      for (i in 1:nrow(output)){
+        df$prob[i] <- (p-1) * df$ka[i] / 180 + 1
+        output$nextrun[i] <- ((p-1) * output$ka[i] / 180 + 1) * df$events[i]
+      }
+
+      
+      # set the column name
+      names(output)[mc+1] <- paste("Simu",toString(mc), sep = " ", collapse = NULL)
+
+    }
+    # plot
+    maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type:", type)
+    subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
+    last <- run + 1
+    plot <- ggplot()
+    for(i in 2:last){
+      gg.data <- data.frame(Time=output[,1], Events=output[,i])
+      plot<- plot+
+        geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05) 
+    }
+    
+    plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
+      ggtitle(maint, subt) +
+      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+      scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 35))+
+      labs(y = "Counts",
+           x = "Time (Years BP)",
+           colour = "Parameter")
+    print(plot)
+    
+    # return data
+    return(output)
+    
+  } else if (type %in% "inverse"){
+    for(mc in 1:run){
+      # generate a new synthetic dataset
+      df <- synthetic_gen(bg, pk)
+      
+      # calculate the number of events preserved in each time period
+      output$nextrun <- NA
+      df$prob <- NA
+      
+      # In the linear case, the fitting curve y = k/(x + b) passes through (0,1) and (180, p)
+      # Therefore:
+      # b = -k and k/(180 + k) = p
+      # solve: k = 180*p/(1 - p)
+      # And the curve is: y = (180 * p / (1 - p))/ (x + (180 * p / (1 - p)))
+      # where y is the prob and x is ka
+      # And the number of preserved events is y * df$events[i]
+      
+      for (i in 1:nrow(output)){
+        df$prob[i] <- (180 * p / (1 - p))/ (df$ka[i] + (180 * p / (1 - p)))
+        output$nextrun[i] <- df$prob[i] * df$events[i]
+      }
+      
+      
+      # set the column name
+      names(output)[mc+1] <- paste("Simu",toString(mc), sep = " ", collapse = NULL)
+      
+    }
+    # plot
+    maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type:", type, "proportional")
+    subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
+    last <- run + 1
+    plot <- ggplot()
+    for(i in 2:last){
+      gg.data <- data.frame(Time=output[,1], Events=output[,i])
+      plot<- plot+
+        geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05) 
+    }
+    
+    plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
+      ggtitle(maint, subt) +
+      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+      scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 35))+
+      labs(y = "Counts",
+           x = "Time (Years BP)",
+           colour = "Parameter")
+    print(plot)
+    
+    # return data
+    return(output)
+
+  } else if (type %in% "log"){
+    
+    # for convenience in natural log calculation, we use probability of DROPPING instead of KEEPING
+    # so we need to initiating a new var called p1
+    
+    p1 <- 1 - p
+    
+    for(mc in 1:run){
+      # generate a new synthetic dataset
+      df <- synthetic_gen(bg, pk)
+      
+      # calculate the number of events preserved in each time period
+      output$nextrun <- NA
+      df$prob <- NA
+      
+      # In the natural log case, the fitting curve y = ln(x+b)/k passes through (0,1) and (180, p1)
+      # detailed calculation could be found on the github folder named naturalLog.png
+      # And the curve is: y = ln(x+1)/(5.198/p1)
+      # And the number of preserved events is (1-y) * df$events[i]
+      
+      for (i in 1:nrow(output)){
+        df$prob[i] <- 1- (log(df$ka[i] + 1) / (5.198 / p1))
+        output$nextrun[i] <- df$prob[i] * df$events[i]
+      }
+      
+      
+      # set the column name
+      names(output)[mc+1] <- paste("Simu",toString(mc), sep = " ", collapse = NULL)
+      
+    }
+    # plot
+    maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type: natural", type)
+    subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
+    last <- run + 1
+    plot <- ggplot()
+    for(i in 2:last){
+      gg.data <- data.frame(Time=output[,1], Events=output[,i])
+      plot<- plot+
+        geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05) 
+    }
+    
+    plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
+      ggtitle(maint, subt) +
+      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+      scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 35))+
+      labs(y = "Counts",
+           x = "Time (Years BP)",
+           colour = "Parameter")
+    print(plot)
+    
+    # return data
+    return(output)
+    
+  } else {
+    error <- "Fitting curve options: linear, log or inverse"
+    print(error)
+    return(NA)
+  }
+  
+  
+}
+```
+
+Here we can call the mc_syn() function to run the Monte Carlo Simulation with options of inputs
+Arguments for the function:
+mc_syn(type, prob, runtime, background, peak)
+
+The type should be a string (so put it in ""). It indicates the fitting curve. Currently we have 3 options: "linear" for a linear curve, "log" for a natural log curver, and "inverse" for an inversed proportional curve.
+
+The prob is your assumption for the probability that a record is KEPT at 180 ka. It should be a double variable between 0 and 1.
+
+Runtime is an integer telling the number of simulations to run in the Monte Carlo simulation.
+
+Background is an integer telling your assumption of the mean number of events during glacial periods.
+
+Peak is an integer telling your assumption of the mean number of events during deglaciation periods.
+
+Also, you need to assign a data frame to receive the simulated data returned from the function. See examples below.
+
+## examples
+linearDF <- mc_syn("linear", 0.25, 100, 5, 30)
+invereseDF <- mc_syn("inverse", 0.1, 100, 5, 25)
+logDF <- mc_syn("log", 0.25, 100, 3, 30)
+errorExample <- mc_syn("shan", 0.25, 100, 10, 30)
+
+```{r}
+linearDF <- mc_syn("linear", 0.25, 100, 5, 30)
+
+
+```
