@@ -2,7 +2,7 @@
 title: "Synthetic Simulation of SVZ"
 author: "Shan Ye"
 date: "July 24, 2019"
-output: html_document
+output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
