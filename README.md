@@ -13,3 +13,5 @@ Options include:
 3. Number of runs in the Monte Carlo Simulation.
 4. Mean number of volcanic events per 1000 years during glacial periods (background noise of the data).
 5. Mean number of volcanic events per 1000 years during deglaciation periods (peaks)
+
+Please install stringdist and ggplot2 before running it.
