@@ -16,4 +16,8 @@ Options include:
 4. Mean number of volcanic events per 1000 years during glacial periods (background noise of the data).
 5. Mean number of volcanic events per 1000 years during deglaciation periods (peaks)
 
+Potential options that could be added:
+1. Standard deviation for generating the background and peak
+2. Manually define deglaciation periods (current: 123 - 127 ka and 14 - 18 ka)
+
 Please install stringdist and ggplot2 before running it.

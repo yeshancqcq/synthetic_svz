@@ -268,9 +268,9 @@ The prob is your assumption for the probability that a record is KEPT at 180 ka.
 
 Runtime is an integer telling the number of simulations to run in the Monte Carlo simulation.
 
-Background is an integer telling your assumption of the mean number of events during glacial periods.
+Background is an integer telling your assumption of the mean number of events during glacial periods (recommend: around 30).
 
-Peak is an integer telling your assumption of the mean number of events during deglaciation periods.
+Peak is an integer telling your assumption of the mean number of events during deglaciation periods (recommend: around 5).
 
 Also, you need to assign a data frame to receive the simulated data returned from the function. See examples below.
 
@@ -283,7 +283,7 @@ errorExample <- mc_syn("shan", 0.25, 100, 10, 30)
 Change the line of code below based on your option, and click the green triangle. Note: you have to run those 2 previous blocks before running the following one. You will find the result in a plot below, and a data frame in the Environment section of the RStudio interface.
 
 ```{r}
-linearDF <- mc_syn("linear", 0.25, 100, 5, 30)
+linearDF <- mc_syn("linear", 0.25, 1000, 5, 30)
 
 
 ```
