@@ -13,7 +13,7 @@ This RMD file is built for the synthetic data simulation for the glaicial-volcan
 
 # Beginning the main file
 
-Setting up the function that generates a synthetic data.
+#Setting up the function that generates a synthetic data.
 Click the green triangle, and you will set up this function, which will be called in the next function.
 
 ```{r}
@@ -69,7 +69,7 @@ synthetic_gen <- function(background, peak){
 
 ```
 
-Setting up the function for the Monte Carlo simulation with options of different fitting curves.
+#Setting up the function for the Monte Carlo simulation with options of different fitting curves.
 Click the green triangle, and you will set up a function that can:
 1) Generate synthetic data for a number of times based on your need (will be specified in the next step)
 2) Conduct the Monte Carlo simulation by filtering the synthetic data based on your options (also will be specified in the next step)
@@ -257,6 +257,7 @@ mc_syn <- function(type, p, run, background, peak){
 }
 ```
 
+## Run the model
 Here we can call the mc_syn() function to run the Monte Carlo Simulation with options of inputs
 Arguments for the function:
 mc_syn(type, prob, runtime, background, peak)

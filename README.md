@@ -1,5 +1,7 @@
 # synthetic_svz
-Synthetic data simulation for the svz study
+Synthetic data simulation for the SVZ volcano-glacier interaction study
+
+Emily Mixon & Shan Ye
 
 Please download the RMD file:
 https://github.com/yeshancqcq/synthetic_svz/blob/master/synthetic%20dataset/synthetic.rmd
