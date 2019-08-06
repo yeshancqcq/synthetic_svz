@@ -5,6 +5,7 @@ Emily Mixon & Shan Ye
 
 Please download the RMD file:
 https://github.com/yeshancqcq/synthetic_svz/blob/master/synthetic%20dataset/synthetic.rmd
+
 And open it in your RStudio to run simulations.
 
 In this RMD file, you can run Monte Carlo Simulations to simulate the preservation of volcanic signals over time based on your own inputs.
@@ -14,10 +15,12 @@ Options include:
 2. The terminal probability of keeping a record at 180 ka. You can change it between 0 and 1.
 3. Number of runs in the Monte Carlo Simulation.
 4. Mean number of volcanic events per 1000 years during glacial periods (background noise of the data).
-5. Mean number of volcanic events per 1000 years during deglaciation periods (peaks)
-
-Potential options that could be added:
-1. Standard deviation for generating the background and peak
-2. Manually define deglaciation periods (current: 123 - 127 ka and 14 - 18 ka)
+5. The standard deviation that defines the normal distribution of number of events at each time period to generate the uncertanty of the background noise.
+6. Mean number of volcanic events per 1000 years during deglaciation periods (peaks)
+7. The standard deviation that defines the normal distribution of number of events at each time period to generate the uncertanty of the signals.
+8. Uncertainty of the argon dating.
+9. Manually define deglaciation periods (Recommended: 123 - 127 ka and 14 - 18 ka)
+10. Whether to add the secondary signal following major signals (as observed in real-world data)
+11. The gap between major signals and corresponding secondary signals (recommended: 5 ka).
 
 Please install stringdist and ggplot2 before running it.
