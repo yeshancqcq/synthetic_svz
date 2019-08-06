@@ -17,7 +17,7 @@ This RMD file is built for the synthetic data simulation for the glaicial-volcan
 Click the green triangle, and you will set up this function, which will be called in the next function.
 
 ```{r}
-synthetic_gen <- function(background, background_sd, peak, peak_sd, ar_uncertainty, degla1_begin, degla1_end, degla2_begin, degla2_end, small){
+synthetic_gen <- function(background, background_sd, peak, peak_sd, ar_uncertainty, degla1_begin, degla1_end, degla2_begin, degla2_end, small, gap){
   
   bg <- background
   pk <- peak
@@ -27,6 +27,7 @@ synthetic_gen <- function(background, background_sd, peak, peak_sd, ar_uncertain
   t2 <- degla1_end
   t3 <- degla2_begin
   t4 <- degla2_end
+  gap <- as.integer(gap)
   
   library(ggplot2)
   
@@ -56,7 +57,7 @@ synthetic_gen <- function(background, background_sd, peak, peak_sd, ar_uncertain
             if(syn$events[i] < 0){
               syn$events[i] <- 0
             }
-        } else if(isTRUE(i>=(t4-5) && i<=(t4-4)) || isTRUE(i>=(t2-5) && i<=(t2-4))){
+        } else if(isTRUE(i>=(t4-gap) && i<=(t4-gap+1)) || isTRUE(i>=(t2-gap) && i<=(t2-gap+1))){
             syn$events[i] <- as.integer(rnorm(1, mean=pk, sd=pksd))
             if(syn$events[i] < 0){
               syn$events[i] <- 0
@@ -127,7 +128,7 @@ Click the green triangle, and you will set up a function that can:
 2) Conduct the Monte Carlo simulation by filtering the synthetic data based on your options (also will be specified in the next step)
 
 ```{r}
-mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_uncertainty, degla1_begin, degla1_end, degla2_begin, degla2_end, small){
+mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_uncertainty, degla1_begin, degla1_end, degla2_begin, degla2_end, small, gap){
   
   require(stringdist)
   
@@ -153,7 +154,7 @@ mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_un
     
     for(mc in 1:run){
       # generate a new synthetic dataset
-      df <- synthetic_gen(bg, bgsd, pk, pksd, ar_uncertainty, t1, t2, t3, t4, small)
+      df <- synthetic_gen(bg, bgsd, pk, pksd, ar_uncertainty, t1, t2, t3, t4, small, gap)
       
       # calculate the number of events preserved in each time period
       output$nextrun <- NA
@@ -203,7 +204,7 @@ mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_un
   } else if (type %in% "inverse"){
     for(mc in 1:run){
       # generate a new synthetic dataset
-      df <- synthetic_gen(bg, bgsd, pk, pksd, ar_uncertainty, t1, t2, t3, t4, small)
+      df <- synthetic_gen(bg, bgsd, pk, pksd, ar_uncertainty, t1, t2, t3, t4, small, gap)
       
       # calculate the number of events preserved in each time period
       output$nextrun <- NA
@@ -260,7 +261,7 @@ mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_un
     
     for(mc in 1:run){
       # generate a new synthetic dataset
-      df <- synthetic_gen(bg, bgsd, pk, pksd, ar_uncertainty, t1, t2, t3, t4, small)
+      df <- synthetic_gen(bg, bgsd, pk, pksd, ar_uncertainty, t1, t2, t3, t4, small, gap)
       
       # calculate the number of events preserved in each time period
       output$nextrun <- NA
@@ -344,18 +345,20 @@ The degla2_begin and degla2_end are starting and ending years bp for the more re
 
 The small determains whether a secondary signal would be added after those two main signals. If you want to add a secondary signal, use 1, otherwise use 0.
 
+The gap is the time gap between major signals and secondary signals (recommend: 5). If the small is 0, then this parameter does not matter.
+
 Also, you need to assign a data frame to receive the simulated data returned from the function. See examples below.
 
 ## examples
-linearDF <- mc_syn("linear", 0.25, 100, 5, 2, 30, 2.5, 0.1, 127, 123, 18, 14, 0)
-invereseDF <- mc_syn("inverse", 0.1, 100, 5, 2, 25, 2.5, 0.05, 128, 124, 18, 14, 1)
-logDF <- mc_syn("log", 0.25, 100, 3, 1.5, 30, 2, 0.08, 127, 123, 18, 14, 1)
-errorExample <- mc_syn("shan", 0.25, 100, 10, 2, 30, 3, 0.03, 127, 123, 18, 12, 0)
+linearDF <- mc_syn("linear", 0.25, 100, 5, 2, 30, 2.5, 0.1, 127, 123, 18, 14, 0, 5)
+invereseDF <- mc_syn("inverse", 0.1, 100, 5, 2, 25, 2.5, 0.05, 128, 124, 18, 14, 1, 4)
+logDF <- mc_syn("log", 0.25, 100, 3, 1.5, 30, 2, 0.08, 127, 123, 18, 14, 1, 5)
+errorExample <- mc_syn("shan", 0.25, 100, 10, 2, 30, 3, 0.03, 127, 123, 18, 12, 0, 5)
 
 Change the line of code below based on your option, and click the green triangle. Note: you have to run those 2 previous blocks before running the following one. You will find the result in a plot below, and a data frame in the Environment section of the RStudio interface.
 
 ```{r}
-result <- mc_syn("log", 0.2, 500, 5, 2, 30, 2.5, 0.1, 127, 123, 18, 14, 1)
+result <- mc_syn("log", 0.2, 500, 5, 2, 30, 2.5, 0.1, 127, 123, 18, 14, 1, 5)
 
 
 ```
