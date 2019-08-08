@@ -319,7 +319,8 @@ mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_un
 ## Run the model
 Here we can call the mc_syn() function to run the Monte Carlo Simulation with options of inputs
 Arguments for the function:
-mc_syn(type, prob, runtime, background, background_sd, peak, peak_sd, ar_uncertainty, degla1_begin, degla1_end, degla2_begin, degla2_end, small)
+
+# mc_syn(type, prob, runtime, background, background_sd, peak, peak_sd, ar_uncertainty, degla1_begin, degla1_end, degla2_begin, degla2_end, small)
 
 The type should be a string (so put it in ""). It indicates the fitting curve. Currently we have 3 options: "linear" for a linear curve, "log" for a natural log curver, and "inverse" for an inversed proportional curve.
 
