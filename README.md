@@ -25,3 +25,5 @@ Options include:
 12. Whether to plot real world data from SVZ and Cascades along with the generated data.
 
 Please install stringdist and ggplot2 before running it.
+
+Real world data are saved in the realData folder. If you want to use this function, you need to download data in this folder a d save them in a folder with the same name (realData) on your local machine. Then, in the line of setwd in the last block of the rmd file, change the directory to one level above this folder. 
