@@ -1,0 +1,603 @@
+﻿Sample ID,description,rank order,Age (ka),Uncert (ka),age (yrs),SiO2,Method,Map Unit,Edifice,Lat,Lon,Ref
+727,,43,4,0,4000,,,,Adams,,,Watt et al 2013
+1539,,50,5.5,0,5500,,,,Adams,,,Watt et al 2013
+852,,53,6,0,6000,,,,Adams,,,Watt et al 2013
+1530,,54,6,0,6000,,,,Adams,,,Watt et al 2013
+1749,,55,6,0,6000,,,,Adams,,,Watt et al 2013
+355,,82,10,0,10000,,,,Adams,,,Watt et al 2013
+OLe18,,84,10,0,10000,,,,Adams,,,Watt et al 2013
+OLe3,,129,14,0,14000,,,,Adams,,,Watt et al 2013
+163,,134,14.5,0,14500,,,,Adams,,,Watt et al 2013
+,,137,14.5,0,14500,,,,Adams,,,Watt et al 2013
+MA-63,andesite of South  Butte,,12,17,12000,,K-Ar,asb,Adams,,,Hildreth et al 1994
+MA-44,andesite of Suksdorf  Ridge,,10,16,10000,,K-Ar,ask,Adams,,,Hildreth et al 1994
+MA-51,andesite of  Mount Adams summit,,15,8,15000,,K-Ar,aas,Adams,,,Hildreth et al 1994
+MA-56,andesite of  Pikers Peak (south summit),,13,8,13000,,K-Ar,app,Adams,,,Hildreth et al 1994
+MA-246,andesite of  Pikers Peak (Ridge of  Wonders),,33,14,33000,,K-Ar,app,Adams,,,Hildreth et al 1994
+MA-15,andesite of  Big Spring Creek,,28,6,28000,,K-Ar,abs,Adams,,,Hildreth et al 1994
+MA-484,andesite of  Devils Gardens,,37,8,37000,,K-Ar,adg,Adams,,,Hildreth et al 1994
+MA-504,andesite of  West  Fork,,55,7,55000,,K-Ar,awf,Adams,,,Hildreth et al 1994
+MA-401,andesite of  Morrison  Creek,,56,6,56000,,K-Ar,amc,Adams,,,Hildreth et al 1994
+MA-83,basalt of  Riley Creek,,63,14,63000,,K-Ar,brc,Adams,,,Hildreth et al 1994
+MA-204,dacite of Cascade Creek,,93,16,93000,,K-Ar,dee,Adams,,,Hildreth et al 1994
+MA-336,dacite of Cascade Creek (intracanyon flow,,117,6,117000,,K-Ar,dee,Adams,,,Hildreth et al 1994
+MA-965,dacite of Bird Creek Meadows,,115,5,115000,,K-Ar,dbc,Adams,,,Hildreth et al 1994
+MA-413,andesite of Parrott Crossing,,120,5,120000,,K-Ar,apc,Adams,,,Hildreth et al 1994
+MA-354,Andesite of killen Creek (Horsehoe Lake) ,,120,7,120000,,K-Ar,akc,Adams,,,Hildreth et al 1994
+MA-124A,andesite of Twin Falls Creek,,137,6,137000,,K-Ar,atf,Adams,,,Hildreth et al 1994
+Ma-1011,andesite of Foggy Flat,,152,8,152000,,K-Ar,aff,Adams,,,Hildreth et al 1994
+MA-290,andesite of Crofton Ridge,,160,12,160000,,K-Ar,acr,Adams,,,Hildreth et al 1994
+MA-1008,dacite of High Camp,,213,5,213000,,K-Ar,dhc,Adams,,,Hildreth et al 1994
+MA-122,dacite of Adams Creek,,233,6,233000,,K-Ar,dac,Adams,,,Hildreth et al 1994
+MA-355h,dacite of Sheep Creek,,246,4,246000,,K-Ar,dsc,Adams,,,Hildreth et al 1994
+MA-356,andesite of Lewis River,,251,5,251000,,K-Ar,alw,Adams,,,Hildreth et al 1994
+MA-838,dacite of lewis river,,252,8,252000,,K-Ar,dlr,Adams,,,Hildreth et al 1994
+MA-991,dacite of hellroaring ditch,,304,5,304000,,K-Ar,dhd,Adams,,,Hildreth et al 1994
+MA-1035,andesite of west muddy fork,,328,21,328000,,K-Ar,awm,Adams,,,Hildreth et al 1994
+MA-144,adensite of lookingglass lake,,329,11,329000,,K-Ar,all,Adams,,,Hildreth et al 1994
+MA-174,andesite of white salmon river (top flow distally),,320,7,320000,,K-Ar,aws,Adams,,,Hildreth et al 1994
+MA-331,andesite of white salmon river (cascade creek base),,456,8,456000,,K-Ar,aws,Adams,,,Hildreth et al 1994
+MA-408,andesite of white salmon river (base near buck creek),,457,11,457000,,K-Ar,aws,Adams,,,Hildreth et al 1994
+MA-477,dacite of the spearhead,,474,12,474000,,K-Ar,dts,Adams,,,Hildreth et al 1994
+MA-523,andesite of hellroaring volcano (big muddy creek),,491,8,491000,,K-Ar,ahv,Adams,,,Hildreth et al 1994
+MA-967,andesite of hellroaring volcano (shadow lake quarry),,511,9,511000,,K-Ar,ahv,Adams,,,Hildreth et al 1994
+MA-365,andesite of helloraring volcano (hellroaring meadown),,516,10,516000,,K-Ar,ahv,Adams,,,Hildreth et al 1994
+MA-311,basalt of Smith  Butte,,14,13,14000,,K-Ar,bsb,Adams,,,Hildreth et al 1994
+MA-437R,andesite of  Little Mount Adams,,63,7,63000,,K-Ar,ala,Adams,,,Hildreth et al 1994
+MA-550,basalt of Glaciate  Butte (vent),,69,15,69000,,K-Ar,bgb,Adams,,,Hildreth et al 1994
+MA-603,ba alt of Glaciate Butte,,68,10,68000,,K-Ar,bgb,Adams,,,Hildreth et al 1994
+MA-502,basalt west of  Clearwater  Creek,,97,21,97000,,K-Ar,bcw,Adams,,,Hildreth et al 1994
+MA-996,andcsite east of Shadow  Lake,,111,6,111000,,K-Ar,aes,Adams,,,Hildreth et al 1994
+MA-695,basalt  of  Potato  Hill,,111,10,111000,,K-Ar,bph,Adams,,,Hildreth et al 1994
+MA-24,basalt of King Mountain ,,89,40,89000,,K-Ar,bkm,Adams,,,Hildreth et al 1994
+MA -380,basalt  of  Meadow  Butte,,138,58,138000,,K-Ar,bmb,Adams,,,Hildreth et al 1994
+MA-729,basalt  of Quigley  Butte,,115,28,115000,,K-Ar,bqb,Adams,,,Hildreth et al 1994
+MA-381,basalt west of  Draper Springs,,122,21,122000,,K-Ar,bdw,Adams,,,Hildreth et al 1994
+MA-954R,basalt west of Stagman  Ridge,,145,20,145000,,K-Ar,bsr,Adams,,,Hildreth et al 1994
+MA-226,basalt of Goat Butte,,159,31,159000,,K-Ar,bgt,Adams,,,Hildreth et al 1994
+MA-319,basalt west of  Draper Springs,,184,29,184000,,K-Ar,bdw,Adams,,,Hildreth et al 1994
+MA-302,basalt of herions bridge,,209,21,209000,,K-Ar,bhb,Adams,,,Hildreth et al 1994
+MA-394,basalt of cakey butte,,246,19,246000,,K-Ar,bcb,Adams,,,Hildreth et al 1994
+MA-799,basalt east of white salmon rivr,,329,50,329000,,K-Ar,bew,Adams,,,Hildreth et al 1994
+MA-40,andesite of cakey butte,,259,35,259000,,K-Ar,acb,Adams,,,Hildreth et al 1994
+MA-424,basalt of bear creek (E lobe),,323,13,323000,,K-Ar,bbc,Adams,,,Hildreth et al 1994
+MA-422,basalt of bear creek (W lobe),,350,14,350000,,K-Ar,bbc,Adams,,,Hildreth et al 1994
+MA-535A,basalt of bacon creek,,378,22,378000,,K-Ar,bbn,Adams,,,Hildreth et al 1994
+MA-11,dacite of olallie lake (stony),,381,5,381000,,K-Ar,dol,Adams,,,Hildreth et al 1994
+MA-350,dacite of olalli lake (glassy),,316,16,316000,,K-Ar,dol,Adams,,,Hildreth et al 1994
+MA-930,andesite of the island,,385,7,385000,,K-Ar,ati,Adams,,,Hildreth et al 1994
+MA-421,basalt of flattop mountain,,394,12,394000,,K-Ar,bfm,Adams,,,Hildreth et al 1994
+MA-449,andesite of dairy creek,,425,7,425000,,K-Ar,adc,Adams,,,Hildreth et al 1994
+MA-572,basalt of the west fork,,500,34,500000,,K-Ar,bwf,Adams,,,Hildreth et al 1994
+MA-585,basalt of clearwater creek,,505,16,505000,,K-Ar,bcl,Adams,,,Hildreth et al 1994
+MA-811,basalt of swampy meadows,,518,14,518000,,K-Ar,bsm,Adams,,,Hildreth et al 1994
+MA-398,basalt of white salmon river,,557,18,557000,,K-Ar,bws,Adams,,,Hildreth et al 1994
+MA-719,andesite of mud spring ,,622,15,622000,,K-Ar,ams,Adams,,,Hildreth et al 1994
+MA-992,andesite of laurel ,,631,21,631000,,K-Ar,alr,Adams,,,Hildreth et al 1994
+MA-386,dacite of dry creek,,695,8,695000,,K-Ar,ddc,Adams,,,Hildreth et al 1994
+MA-414,basalt of outlet falls,,775,114,775000,,K-Ar,bof,Adams,,,Hildreth et al 1994
+MA-347,andesite of bacon creek,,903,13,903000,,K-Ar,abc,Adams,,,Hildreth et al 1994
+MA-428,andesit of mount adams highway (garbage dump),,931,14,931000,,K-Ar,aah,Adams,,,Hildreth et al 1994
+MA-705,andesite of mount adams highway (skunk creek),,942,11,942000,,K-Ar,aah,Adams,,,Hildreth et al 1994
+MA-390,basalt of  Blue Jay Campground,,940,36,940000,,K-Ar,bbj,Adams,,,Hildreth et al 1994
+MA-846,basalt of  Glenwood,,2360,720,2360000,,K-Ar,bgo,Adams,,,Hildreth et al 1994
+1746,,497,716,45,716000,50.2,K-Ar,bpb,Baker,,,Hildreth et al 2003
+,,314,94,21,94000,52.1,K-Ar,bls,Baker,,,Hildreth et al 2003
+144,,445,331,18,331000,52.9,K-Ar,bcc,Baker,,,Hildreth et al 2003
+141,,387,203,25,203000,54.2,K-Ar,atp,Baker,,,Hildreth et al 2003
+496,,506,878,18,878000,55.5,K-Ar,atc,Baker,,,Hildreth et al 2003
+433,,261,48,18,48000,55.6,K-Ar,asw,Baker,,,Hildreth et al 2003
+1011,,418,296,20,296000,55.7,K-Ar,arc,Baker,,,Hildreth et al 2003
+212-3,,339,119,23,119000,56.1,K-Ar,ado,Baker,,,Hildreth et al 2003
+1029,,447,333,12,333000,56.2,K-Ar,abp,Baker,,,Hildreth et al 2003
+854,,480,495,18,495000,56.3,K-Ar,arc,Baker,,,Hildreth et al 2003
+152,,74,9,11,9000,57.9,K-Ar,amp,Baker,,,Hildreth et al 2003
+1544,,461,366,10,366000,57.95,K-Ar,afd,Baker,,,Hildreth et al 2003
+1295,,448,334,15,334000,58.1,K-Ar,abb,Baker,,,Hildreth et al 2003
+1130,,127,14,9,14000,58.3,K-Ar,agc,Baker,,,Hildreth et al 2003
+284,,245,36,14,36000,58.3,K-Ar,acv,Baker,,,Hildreth et al 2003
+1142,,475,457,40,457000,58.3,K-Ar,alr,Baker,,,Hildreth et al 2003
+,,452,336,15,336000,58.5,K-Ar,abb,Baker,,,Hildreth et al 2003
+355,,348,140,55,140000,58.6,K-Ar,apc,Baker,,,Hildreth et al 2003
+525,,449,334,11,334000,58.7,K-Ar,abb,Baker,,,Hildreth et al 2003
+1565,,89,11,9,11000,58.8,K-Ar,acv,Baker,,,Hildreth et al 2003
+OLe5,,299,76,7,76000,58.8,K-Ar,aba,Baker,,,Hildreth et al 2003
+1196,,333,114,9,114000,59.2,K-Ar,aem,Baker,,,Hildreth et al 2003
+185,,441,322,12,322000,59.2,K-Ar,abr,Baker,,,Hildreth et al 2003
+1547,,428,305,6,305000,59.4,K-Ar,acp,Baker,,,Hildreth et al 2003
+1132,,255,43,5,43000,59.5,K-Ar,amp,Baker,,,Hildreth et al 2003
+OLe4,,416,288,15,288000,59.5,K-Ar,abb,Baker,,,Hildreth et al 2003
+210-9,,453,339,11,339000,59.55,K-Ar,abb,Baker,,,Hildreth et al 2003
+381,,323,105,8,105000,59.6,K-Ar,adb,Baker,,,Hildreth et al 2003
+1303,,457,346,9,346000,59.8,K-Ar,abb,Baker,,,Hildreth et al 2003
+,,505,859,14,859000,59.8,K-Ar,alm,Baker,,,Hildreth et al 2003
+913,,375,189,11,189000,60.0,K-Ar,aov,Baker,,,Hildreth et al 2003
+312,,75,9,7,9000,60.1,K-Ar,arg,Baker,,,Hildreth et al 2003
+1147,,228,32,14,32000,60.1,K-Ar,amp,Baker,,,Hildreth et al 2003
+210-10,,450,334,9,334000,60.5,K-Ar,acd,Baker,,,Hildreth et al 2003
+1015,,509,1005,17,1005000,60.5,K-Ar,asr,Baker,,,Hildreth et al 2003
+OLe6,,192,24,16,24000,60.6,K-Ar,arg,Baker,,,Hildreth et al 2003
+1198,,419,296,15,296000,60.6,K-Ar,ald,Baker,,,Hildreth et al 2003
+OLe-18,,378,192,8,192000,60.7,K-Ar,adh,Baker,,,Hildreth et al 2003
+1216,,435,309,13,309000,60.7,K-Ar,atm,Baker,,,Hildreth et al 2003
+806,,287,70,7,70000,60.9,K-Ar,apt,Baker,,,Hildreth et al 2003
+143,,432,306,13,306000,60.9,K-Ar,ack,Baker,,,Hildreth et al 2003
+486,,514,1156,130,1156000,60.9,K-Ar,adc,Baker,,,Hildreth et al 2003
+1913,,474,455,9,455000,61.1,K-Ar,afd,Baker,,,Hildreth et al 2003
+1086,,481,515,8,515000,61.1,K-Ar,alr,Baker,,,Hildreth et al 2003
+240,,442,322,9,322000,61.4,K-Ar,abr,Baker,,,Hildreth et al 2003
+1181,,493,613,8,613000,61.9,K-Ar,dcd,Baker,,,Hildreth et al 2003
+825,,501,743,72,743000,61.9,K-Ar,ald,Baker,,,Hildreth et al 2003
+497,,431,306,13,306000,62.1,K-Ar,abb,Baker,,,Hildreth et al 2003
+213-3,,500,743,34,743000,62.1,K-Ar,ail,Baker,,,Hildreth et al 2003
+435,,308,90,52,90000,62.2,K-Ar,abg,Baker,,,Hildreth et al 2003
+143,,386,202,9,202000,62.2,K-Ar,apl,Baker,,,Hildreth et al 2003
+852,,425,301,5,301000,62.6,K-Ar,atm,Baker,,,Hildreth et al 2003
+1294,,478,460,13,460000,62.8,K-Ar,ald,Baker,,,Hildreth et al 2003
+506,,462,374,10,374000,63.7,K-Ar,abb,Baker,,,Hildreth et al 2003
+205,,303,80,14,80000,63.9,K-Ar,abg,Baker,,,Hildreth et al 2003
+1190,,354,149,5,149000,64.7,K-Ar,dnf,Baker,,,Hildreth et al 2003
+705,,455,343,5,343000,64.7,K-Ar,abb,Baker,,,Hildreth et al 2003
+472,,504,764,163,764000,64.7,K-Ar,gbc,Baker,,,Hildreth et al 2003
+491,,515,1191,94,1191000,66.3,K-Ar,dbm,Baker,,,Hildreth et al 2003
+965,,513,1155,38,1155000,68.1,K-Ar,rsw,Baker,,,Hildreth et al 2003
+1523,,380,199,5,199000,68.6,K-Ar,rbr,Baker,,,Hildreth et al 2003
+372,,510,1032,11,1032000,70.8,K-Ar,rpd,Baker,,,Hildreth et al 2003
+314,,511,1060,10,1060000,71.6,K-Ar,rcr,Baker,,,Hildreth et al 2003
+1098,,57,6.6,0,6600,,,,Baker,,,Watt et al 2013
+,,78,9.8,0,9800,,,,Baker,,,Watt et al 2013
+306,,97,12.5,0,12500,,,,Baker,,,Watt et al 2013
+1508,,98,12.5,0,12500,,,,Baker,,,Watt et al 2013
+1073,,128,14,0,14000,,,,Baker,,,Watt et al 2013
+831,,81,10,0,10000,,,,Garibaldi,,,Watt et al 2013
+,,111,13.5,0,13500,,,,Garibaldi lake,,,Watt et al 2013
+1222,,112,13.5,0,13500,,,,Garibaldi lake,,,Watt et al 2013
+761,,106,13,0,13000,,Geomorph,,Garibaldi Lake Volc Field,,,Wilson & Russel 2018
+835,,107,13,0,13000,,Geomorph,,Garibaldi Lake Volc Field,,,Wilson & Russel 2018
+,,108,13,0,13000,,Geomorph,,Garibaldi Lake Volc Field,,,Wilson & Russel 2018
+1073,,236,34.2,0.8,34200,,14C,,Garibaldi Lake Volc Field,,,Wilson & Russel 2018
+1346,,251,40,40,40000,,K-Ar,,Garibaldi Lake Volc Field,,,Wilson & Russel 2018
+59,,321,100,12,100000,,Ar,,Garibaldi Lake Volc Field,,,Wilson & Russel 2018
+1045,,329,110,30,110000,,K-Ar,,Garibaldi Lake Volc Field,,,Wilson & Russel 2018
+1073,,350,140.8,12.9,140800,,Ar,,Garibaldi Lake Volc Field,,,Wilson & Russel 2018
+761,,424,300,200,300000,,K-Ar,,Garibaldi Lake Volc Field,,,Wilson & Russel 2018
+767,,518,1300,100,1300000,,K-Ar,,Garibaldi Lake Volc Field,,,Wilson & Russel 2018
+484,,468,405,11.5,405000,,K-Ar,,Garibaldis-Bridge River Volc Field,,,Wilson & Russel 2018
+214-3,,490,598,7.5,598000,,K-Ar,,Garibaldis-Bridge River Volc Field,,,Wilson & Russel 2018
+1790,,499,731,13.5,731000,,K-Ar,,Garibaldis-Bridge River Volc Field,,,Wilson & Russel 2018
+266,,503,752,9,752000,,K-Ar,,Garibaldis-Bridge River Volc Field,,,Wilson & Russel 2018
+218,,524,2200,100,2200000,,K-Ar,,Garibaldis-Franklin Glacier Volc Field,,,Wilson & Russel 2018
+836,,526,4000,100,4000000,,K-Ar,,Garibaldis-Franklin Glacier Volc Field,,,Wilson & Russel 2018
+OLe15,,30,2.34,0.05,2340,,14C,,Garibaldis-Meager,,,Wilson & Russel 2018
+484,,31,2.4,0,2400,,,,Garibaldis-Meager,,,Watt et al 2013
+375,,158,17,4,17000,,Geomorph,,Garibaldis-Meager,,,Wilson & Russel 2018
+1289,,276,57,78,57000,,K-Ar,,Garibaldis-Meager,,,Wilson & Russel 2018
+510,,298,75,9,75000,,Ar,,Garibaldis-Meager,,,Wilson & Russel 2018
+1437,,309,90,60,90000,,K-Ar,,Garibaldis-Meager,,,Wilson & Russel 2018
+,,322,100,20,100000,,K-Ar,,Garibaldis-Meager,,,Wilson & Russel 2018
+,,349,140,100,140000,,K-Ar,,Garibaldis-Meager,,,Wilson & Russel 2018
+OLe8,,384,200,140,200000,,K-Ar,,Garibaldis-Meager,,,Wilson & Russel 2018
+1443,,507,900,200,900000,,K-Ar,,Garibaldis-Meager,,,Wilson & Russel 2018
+1014,,523,1900,200,1900000,,K-Ar,,Garibaldis-Meager,,,Wilson & Russel 2018
+OLe10,,265,49.1,4.4,49100,,Ar,,Garibaldis-Mt. Cayley Volc Field,,,Wilson & Russel 2018
+1007,,376,189.2,11.8,189200,,Ar,,Garibaldis-Mt. Cayley Volc Field,,,Wilson & Russel 2018
+1211,,436,310,50,310000,,K-Ar,,Garibaldis-Mt. Cayley Volc Field,,,Wilson & Russel 2018
+214-1,,525,2700,700,2700000,,K-Ar,,Garibaldis-Mt. Cayley Volc Field,,,Wilson & Russel 2018
+OLe16,,85,10,0.7,10000,,14C,,Garibaldis-Mt. Garibaldi Volc Filed,,,Wilson & Russel 2018
+815,,86,10,0.7,10000,,14C,,Garibaldis-Mt. Garibaldi Volc Filed,,,Wilson & Russel 2018
+745,,93,11.7,0.425,11700,,14C,,Garibaldis-Mt. Garibaldi Volc Filed,,,Wilson & Russel 2018
+730,,131,14,0,14000,,Geomorph,,Garibaldis-Mt. Garibaldi Volc Filed,,,Wilson & Russel 2018
+1616,,132,14,0,14000,,Geomorph,,Garibaldis-Mt. Garibaldi Volc Filed,,,Wilson & Russel 2018
+1210,,182,21.9,3.35,21900,,Ar,,Garibaldis-Mt. Garibaldi Volc Filed,,,Wilson & Russel 2018
+1368,,395,220,220,220000,,K-Ar,,Garibaldis-Mt. Garibaldi Volc Filed,,,Wilson & Russel 2018
+1457,,96,12.2,0.14,12200,,14C,,Garibaldis-Salal Glacier Volc Field,,,Wilson & Russel 2018
+1054,,466,400,100,400000,,K-Ar,,Garibaldis-Salal Glacier Volc Field,,,Wilson & Russel 2018
+OLe20,,488,590,50,590000,,K-Ar,,Garibaldis-Salal Glacier Volc Field,,,Wilson & Russel 2018
+1057,,502,750,80,750000,,K-Ar,,Garibaldis-Salal Glacier Volc Field,,,Wilson & Russel 2018
+768,,508,970,50,970000,,K-Ar,,Garibaldis-Salal Glacier Volc Field,,,Wilson & Russel 2018
+758,,7,0.3,0,300,,,,Glacier Peak,,,Watt et al 2013
+983,,13,1.1,0,1100,,,,Glacier Peak,,,Watt et al 2013
+208-4,,18,1.9,0,1900,,,,Glacier Peak,,,Watt et al 2013
+1177,,38,2.8,0,2800,,,,Glacier Peak,,,Watt et al 2013
+,,56,6.1,0,6100,,,,Glacier Peak,,,Watt et al 2013
+,,104,13,0,13000,,,,Glacier Peak,,,Watt et al 2013
+,,113,13.5,0,13500,,,,Glacier Peak,,,Watt et al 2013
+,,114,13.5,0,13500,,,,Glacier Peak,,,Watt et al 2013
+,,5,0.2,0,200,,,,Hood,,,Watt et al 2013
+,,17,1.5,0,1500,,,,Hood,,,Watt et al 2013
+,,67,7.7,0,7700,,,,Hood,,,Watt et al 2013
+,,147,16,0,16000,,,,Hood,,,Watt et al 2013
+,,76,9,0,9000,,,,Indian Heaven,,,Watt et al 2013
+,,11,1,0,1000,,,,Jefferson Reach,,,Watt et al 2013
+,,59,7,0,7000,,,,Jefferson Reach,,,Watt et al 2013
+,,60,7,0,7000,,,,Jefferson Reach,,,Watt et al 2013
+,,65,7,0,7000,,,,Jefferson Reach,,,Watt et al 2013
+,,139,15,0,15000,,,,Jefferson Reach,,,Watt et al 2013
+,,3,0.097,0,97,,,,Lassen,,,Watt et al 2013
+,,8,0.346,0,346,,,,Lassen,,,Watt et al 2013
+,,12,1.05,0,1050,,,,Lassen,,,Watt et al 2013
+,,100,12.5,0,12500,,,,Lassen,,,Watt et al 2013
+,,118,13.5,0,13500,,,,Lassen,,,Watt et al 2013
+,,156,17,48,17000,48.9,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,166,20,31,20000,50,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,316,98,8,98000,52.4,Ar,br,Mazama,,,Bacon & Lamphere 2007
+,,494,648,33,648000,52.4,Ar,baf,Mazama,,,Bacon & Lamphere 2007
+,,391,213,26,213000,53,Ar,bo,Mazama,,,Bacon & Lamphere 2007
+,,491,605,25,605000,53.2,Ar,blp,Mazama,,,Bacon & Lamphere 2007
+,,388,207,53,207000,53.4,Ar,bcnp,Mazama,,,Bacon & Lamphere 2007
+,,421,297,12,297000,53.6,Ar,bmc,Mazama,,,Bacon & Lamphere 2007
+,,338,118,48,118000,53.7,Ar,bcsp,Mazama,,,Bacon & Lamphere 2007
+,,389,210,47,210000,53.8,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,331,113,24,113000,53.9,Ar,br,Mazama,,,Bacon & Lamphere 2007
+,,385,201,13,201000,53.9,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,241,35,4,35000,54.0,Ar,br,Mazama,,,Bacon & Lamphere 2007
+,,302,80,14,80000,54,Ar,br,Mazama,,,Bacon & Lamphere 2007
+SC98-192,,522,1879,22,1879000,54,Ar,bck,Mazama,,,Bacon & Lamphere 2007
+SC03-611D,,520,1379,22,1379000,54.4,Ar,bwci,Mazama,,,Bacon & Lamphere 2007
+,,271,53,4,53000,54.7,Ar,bsc,Mazama,,,Bacon & Lamphere 2007
+,,335,116,24,116000,55,Ar,bf,Mazama,,,Bacon & Lamphere 2007
+,,345,133,29,133000,55,Ar,all,Mazama,,,Bacon & Lamphere 2007
+,,353,149,7,149000,55,Ar,all,Mazama,,,Bacon & Lamphere 2007
+,,367,173,20,173000,55.1,Ar,bu,Mazama,,,Bacon & Lamphere 2007
+,,392,217,16,217000,56,Ar,bx,Mazama,,,Bacon & Lamphere 2007
+,,394,219,7,219000,56.6,Ar,ac,Mazama,,,Bacon & Lamphere 2007
+,,290,73,6,73000,57,Ar,bhi,Mazama,,,Bacon & Lamphere 2007
+,,516,1198,19,1198000,57.1,Ar,adsi,Mazama,,,Bacon & Lamphere 2007
+,,351,145,12,145000,57.2,Ar,acr,Mazama,,,Bacon & Lamphere 2007
+,,355,150,9,150000,57.2,Ar,all,Mazama,,,Bacon & Lamphere 2007
+,,365,172,15,172000,57.2,Ar,amv,Mazama,,,Bacon & Lamphere 2007
+,,484,543,2,543000,57.4,Ar,aaf,Mazama,,,Bacon & Lamphere 2007
+,,346,136,8,136000,57.7,Ar,acr,Mazama,,,Bacon & Lamphere 2007
+,,482,517,15,517000,57.8,Ar,at,Mazama,,,Bacon & Lamphere 2007
+SC03-612,,521,1850,470,1850000,57.9,Ar,su,Mazama,,,Bacon & Lamphere 2007
+,,242,35,12,35000,58,Ar,asc,Mazama,,,Bacon & Lamphere 2007
+,,315,98,26,98000,58,Ar,asc,Mazama,,,Bacon & Lamphere 2007
+,,341,122,20,122000,58.3,Ar,all,Mazama,,,Bacon & Lamphere 2007
+,,163,19,19,19000,58.8,Ar,atc,Mazama,,,Bacon & Lamphere 2007
+,,334,115,4,115000,58.8,Ar,atc,Mazama,,,Bacon & Lamphere 2007
+,,283,67,12,67000,58.9,Ar,ah,Mazama,,,Bacon & Lamphere 2007
+,,304,84,13,84000,58.9,Ar,arw,Mazama,,,Bacon & Lamphere 2007
+,,363,164,11,164000,59,Ar,alb,Mazama,,,Bacon & Lamphere 2007
+,,438,313,6,313000,59,Ar,aa,Mazama,,,Bacon & Lamphere 2007
+,,487,587,18,587000,59,Ar,acc,Mazama,,,Bacon & Lamphere 2007
+,,454,341,8,341000,59.2,Ar,ak,Mazama,,,Bacon & Lamphere 2007
+,,361,153,12,153000,59.3,Ar,all,Mazama,,,Bacon & Lamphere 2007
+,,439,315,8,315000,59.3,Ar,ak,Mazama,,,Bacon & Lamphere 2007
+,,415,288,13,288000,59.4,Ar,ac,Mazama,,,Bacon & Lamphere 2007
+,,258,47,8,47000,59.5,Ar,apu,Mazama,,,Bacon & Lamphere 2007
+,,279,64,7,64000,59.5,Ar,aww,Mazama,,,Bacon & Lamphere 2007
+,,301,79,10,79000,60,Ar,aww,Mazama,,,Bacon & Lamphere 2007
+,,451,336,6,336000,60,Ar,arv,Mazama,,,Bacon & Lamphere 2007
+,,374,189,3,189000,60.2,Ar,ags,Mazama,,,Bacon & Lamphere 2007
+,,434,307,12,307000,60.6,Ar,ak,Mazama,,,Bacon & Lamphere 2007
+,,317,100,10,100000,60.8,Ar,alu,Mazama,,,Bacon & Lamphere 2007
+,,337,117,3,117000,60.8,Ar,alu,Mazama,,,Bacon & Lamphere 2007
+,,458,349,11,349000,60.8,Ar,ak,Mazama,,,Bacon & Lamphere 2007
+,,300,78,8,78000,60.9,Ar,ad,Mazama,,,Bacon & Lamphere 2007
+,,408,269,12,269000,60.9,Ar,aa,Mazama,,,Bacon & Lamphere 2007
+,,254,43,6,43000,61,Ar,asb,Mazama,,,Bacon & Lamphere 2007
+,,256,46,9,46000,61,Ar,asb,Mazama,,,Bacon & Lamphere 2007
+,,343,131,18,131000,61,Ar,am,Mazama,,,Bacon & Lamphere 2007
+,,373,186,20,186000,61,Ar,all,Mazama,,,Bacon & Lamphere 2007
+,,396,222,12,222000,61,Ar,ag,Mazama,,,Bacon & Lamphere 2007
+,,443,323,12,323000,61,Ar,ak,Mazama,,,Bacon & Lamphere 2007
+,,401,234,10,234000,61.3,Ar,arv,Mazama,,,Bacon & Lamphere 2007
+,,411,276,8,276000,61.4,Ar,af,Mazama,,,Bacon & Lamphere 2007
+,,402,242,5,242000,61.6,Ar,aa,Mazama,,,Bacon & Lamphere 2007
+,,282,66,12,66000,61.8,Ar,als,Mazama,,,Bacon & Lamphere 2007
+,,273,55,6,55000,62,Ar,atw,Mazama,,,Bacon & Lamphere 2007
+,,275,56,24,56000,62,Ar,agc,Mazama,,,Bacon & Lamphere 2007
+,,286,70,4,70000,62,Ar,agc,Mazama,,,Bacon & Lamphere 2007
+,,327,109,19,109000,62,Ar,ar,Mazama,,,Bacon & Lamphere 2007
+,,400,231,6,231000,62,Ar,aa,Mazama,,,Bacon & Lamphere 2007
+,,426,303,3,303000,62.1,Ar,asc(ak),Mazama,,,Bacon & Lamphere 2007
+,,440,316,10,316000,62.1,Ar,ak,Mazama,,,Bacon & Lamphere 2007
+,,467,403,12,403000,62.1,Ar,apn,Mazama,,,Bacon & Lamphere 2007
+,,390,211,16,211000,62.3,Ar,aa,Mazama,,,Bacon & Lamphere 2007
+,,464,382,8,382000,62.4,Ar,db,Mazama,,,Bacon & Lamphere 2007
+,,406,258,8,258000,62.5,Ar,aa,Mazama,,,Bacon & Lamphere 2007
+,,495,651,28,651000,62.5,Ar,as,Mazama,,,Bacon & Lamphere 2007
+SC99-343,,519,1310,19,1310000,62.5,Ar,dd,Mazama,,,Bacon & Lamphere 2007
+,,456,346,20,346000,62.6,Ar,apn,Mazama,,,Bacon & Lamphere 2007
+,,270,52,4,52000,62.9,Ar,atw,Mazama,,,Bacon & Lamphere 2007
+,,278,61,8,61000,62.9,Ar,atw,Mazama,,,Bacon & Lamphere 2007
+,,330,111,9,111000,63,Ar,abl,Mazama,,,Bacon & Lamphere 2007
+,,405,258,7,258000,63,Ar,aa,Mazama,,,Bacon & Lamphere 2007
+,,444,329,10,329000,63.1,Ar,db,Mazama,,,Bacon & Lamphere 2007
+,,459,354,4,354000,63.1,Ar,db,Mazama,,,Bacon & Lamphere 2007
+,,512,1088,13,1088000,63.5,Ar,asw,Mazama,,,Bacon & Lamphere 2007
+,,446,333,6,333000,63.6,Ar,db?,Mazama,,,Bacon & Lamphere 2007
+,,465,396,11,396000,63.6,Ar,db,Mazama,,,Bacon & Lamphere 2007
+,,398,225,7,225000,64,Ar,dr,Mazama,,,Bacon & Lamphere 2007
+,,437,311,13,311000,64,Ar,aa,Mazama,,,Bacon & Lamphere 2007
+,,336,116,5,116000,64.6,Ar,dsb,Mazama,,,Bacon & Lamphere 2007
+,,492,612,8,612000,64.6,Ar,dw,Mazama,,,Bacon & Lamphere 2007
+,,429,306,7,306000,64.7,Ar,dr,Mazama,,,Bacon & Lamphere 2007
+,,312,92,17,92000,65,Ar,dpe,Mazama,,,Bacon & Lamphere 2007
+,,412,276,11,276000,65,Ar,dm,Mazama,,,Bacon & Lamphere 2007
+,,476,460,20,460000,65,Ar,aa,Mazama,,,Bacon & Lamphere 2007
+,,325,106,7,106000,65.3,Ar,dsb,Mazama,,,Bacon & Lamphere 2007
+,,288,71,6,71000,65.7,Ar,dc,Mazama,,,Bacon & Lamphere 2007
+,,284,68,13,68000,65.8,Ar,dc,Mazama,,,Bacon & Lamphere 2007
+,,393,218,8,218000,66,Ar,aa?,Mazama,,,Bacon & Lamphere 2007
+,,472,422,10,422000,66,Ar,ds,Mazama,,,Bacon & Lamphere 2007
+,,403,244,4,244000,66.3,Ar,dcn,Mazama,,,Bacon & Lamphere 2007
+,,295,75,6,75000,67,Ar,dwf,Mazama,,,Bacon & Lamphere 2007
+,,460,356,10,356000,67,Ar,ds,Mazama,,,Bacon & Lamphere 2007
+,,489,595,10,595000,67.1,Ar,ds,Mazama,,,Bacon & Lamphere 2007
+SC98-155,,517,1275,14,1275000,67.7,Ar,dsc,Mazama,,,Bacon & Lamphere 2007
+,,485,563,20,563000,67.9,Ar,su,Mazama,,,Bacon & Lamphere 2007
+,,486,566,116,566000,69,Ar,rsc,Mazama,,,Bacon & Lamphere 2007
+,,496,693,150,693000,69,Ar,rsc,Mazama,,,Bacon & Lamphere 2007
+,,174,21,1,21000,69.8,Ar,rbb,Mazama,,,Bacon & Lamphere 2007
+,,469,409,14,409000,70,Ar,rsc,Mazama,,,Bacon & Lamphere 2007
+,,473,448,8,448000,70,Ar,rpb,Mazama,,,Bacon & Lamphere 2007
+,,103,13,3,13000,71,Ar,rs,Mazama,,,Bacon & Lamphere 2007
+,,479,468,9,468000,72,Ar,rpb,Mazama,,,Bacon & Lamphere 2007
+,,498,724,5,724000,72.6,Ar,rcc,Mazama,,,Bacon & Lamphere 2007
+SC97-109,,61,7,0,7000,,,,Mazama,,,Watt et al 2013
+SC03-619A,,62,7,0,7000,,,,Mazama,,,Watt et al 2013
+P90-22A,,63,7,0,7000,,,,Mazama,,,Watt et al 2013
+SC03-620A,,64,7,0,7000,,,,Mazama,,,Watt et al 2013
+,,257,47,12,47000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,294,75,6,75000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,360,152,18,152000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,397,224,9,224000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,410,273,13,273000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,414,288,19,288000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,417,294,9,294000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,430,306,5,306000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,433,307,12,307000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,470,415,11,415000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+,,471,416,7,416000,,Ar,,Mazama,,,Bacon & Lamphere 2007
+SC98-251A,,44,4.8,0,4800,,,,Mazama Reach,,,Watt et al 2013
+SC98-193,,68,7.7,0,7700,,,,Mazama Reach,,,Watt et al 2013
+SC98-193,,69,7.9,0,7900,,,,Mazama Reach,,,Watt et al 2013
+SC97-143,,92,11.5,0,11500,,,,Mazama Reach,,,Watt et al 2013
+SC03-642,,117,13.5,0,13500,,,,McLoughlin Reach,,,Watt et al 2013
+99YC-P32,,119,13.5,0,13500,,,,McLoughlin Reach,,,Watt et al 2013
+W-5724,,4,0.15,0,150,,,,Rainier,,,Watt et al 2013
+USGS-2780,,14,1.1,0,1100,,,,Rainier,,,Watt et al 2013
+W-5719,,23,2.1,0,2100,,,,Rainier,,,Watt et al 2013
+W-2832,,24,2.2,0,2200,,,,Rainier,,,Watt et al 2013
+W-2441,,28,2.3,0,2300,,,,Rainier,,,Watt et al 2013
+W-2655,,32,2.4,0,2400,,,,Rainier,,,Watt et al 2013
+W-2866,,33,2.45,0,2450,,,,Rainier,,,Watt et al 2013
+W-2870,,45,5,0,5000,,,,Rainier,,,Watt et al 2013
+W-2868,,52,5.6,0,5600,,,,Rainier,,,Watt et al 2013
+W-3145,,58,6.85,0,6850,,,,Rainier,,,Watt et al 2013
+W-3133,,66,7.2,0,7200,,,,Rainier,,,Watt et al 2013
+Porter 1,,79,9.8,0,9800,,,,Rainier,,,Watt et al 2013
+W-3548,,252,40,9,40000,,K-Ar,,Rainier,,,Sisson & Lamphere 1997
+98LC-Q219H2,,306,87,5,87000,,K-Ar,,Rainier,,,Sisson & Lamphere 1997
+98LC-Q219B,,310,91,6,91000,,K-Ar,,Rainier,,,Sisson & Lamphere 1997
+SC97-143,,313,93,7,93000,,K-Ar,,Rainier,,,Sisson & Lamphere 1997
+W97-141,,324,105,9,105000,,K-Ar,,Rainier,,,Sisson & Lamphere 1997
+Porter 2,,49,5.1,0,5100,,,,Shasta,,,Watt et al 2013
+Clague 1,,83,10,0,10000,,,,Shasta,,,Watt et al 2013
+Porter 3,,87,10.5,0,10500,,,,Shasta,,,Watt et al 2013
+WSU-2714,,91,11,0,11000,,,,Shasta,,,Watt et al 2013
+QL-1436,,72,8.5,0,8500,,,,South Washington,,,Watt et al 2013
+"MB-238      Andesite of Black Buttes, low in Heliotrope Ridge stack, Thunder Glacier",,1,0.007,0,7,,,,St Helens,,,Watt et al 2013
+MB-223,,2,0.029,0,29,,,,St Helens,,,Watt et al 2013
+"MB-49        Andesite of Black Buttes, Sandy/Sulphur divide, knob 4864",,6,0.212,0,212,,,,St Helens,,,Watt et al 2013
+"MB-249      Andesite of Black Buttes, flow capping crest of Marmot Ridge",,9,0.522,0,522,,,,St Helens,,,Watt et al 2013
+"MB-603      Andesite of Black Buttes, second flow, SE wall Wallace Creek, 5250'",,15,1.237,0,1237,,,,St Helens,,,Watt et al 2013
+"MB-246      Andesite of Black Buttes, thick flow flooring Wallace Creek at 5400'",,19,1.9,0,1900,,,,St Helens,,,Watt et al 2013
+MB-222,,29,2.3,0,2300,,,,St Helens,,,Watt et al 2013
+"MB-116      Andesite of Black Buttes, 100-m-thick flow, E wall of Rankin Lakes",,35,2.53,0,2530,,,,St Helens,,,Watt et al 2013
+MB-22,,42,3.85,0,3850,,,,St Helens,,,Watt et al 2013
+"MB-260      Andesite of Dobbs Creek, knob 5100, SE of Dobbs Creek",,101,12.79,0.18,12790,,14C,,St Helens,,,Clynne et al 2008
+"MB-645      Andesite of Park Creek, flow low in stack, base of SW wall Park Creek",,102,12.9,0.15,12900,,14C,,St Helens,,,Clynne et al 2008
+"MB-488      Andesite of Ochotona complex, W-facing cliff 1 km S of Iceberg Lake Younger lavas inset along Cougar Divide (cf. MB-223, MB-225 above)",,109,13.4,0.2,13400,,14C,,St Helens,,,Clynne et al 2008
+"MB-110      Andesite of Black Buttes, W slope Seward Peak",,110,13.4,0.25,13400,,14C,,St Helens,,,Clynne et al 2008
+"MB-262      Andesite of Deadhorse Creek, remnant on crest of Cougar Divide, 5300'",,120,13.57,0.13,13570,,14C,,St Helens,,,Clynne et al 2008
+"MB-12        Andesite of Pinus Lake, W-facing cliff 2400', 1 km ESE of Nooksack Falls",,121,13.73,0.26,13730,,14C,,St Helens,,,Clynne et al 2008
+"MB-193      Rhyodacite of Boulder Ridge, distal flow remnant, roadcut at 1650'",,122,13.75,0.14,13750,,14C,,St Helens,,,Clynne et al 2008
+"MB-53        Andesite of Tarn Plateau, S rim of flow-remnant mesa NNW of Pocket L.",,123,13.775,0.225,13775,,14C,,St Helens,,,Clynne et al 2008
+"MB-332A    Dacite of Nooksack Falls, flow banked below apl, N-facing cliff, 2100'",,124,13.855,0.09,13855,,14C,,St Helens,,,Clynne et al 2008
+"MB-63        Andesite of Rankin Creek, top flow of stack, knob 4481",,125,13.97,0.14,13970,,14C,,St Helens,,,Clynne et al 2008
+"MB-391      Andesite of Table Mountain, basal flow, floor of Heather Meadows",,126,13.99,0.14,13990,,14C,,St Helens,,,Clynne et al 2008
+MB-61,,133,14.13,0.19,14130,,14C,,St Helens,,,Clynne et al 2008
+"MB-135      Andesite of Lasiocarpa Ridge, S-most spur, Sholes/Wells divide Black Buttes stratovolcano",,135,14.5,0,14500,,,,St Helens,,,Watt et al 2013
+"MB-119      Andesite of Black Buttes, 350-m-thick flow, Wallace/Rankin divide",,142,15.225,0.27,15225,,14C,,St Helens,,,Clynne et al 2008
+MB-59,,143,15.525,0.54,15525,,14C,,St Helens,,,Clynne et al 2008
+MB-151,,144,15.8,0.3,15800,,14C,,St Helens,,,Clynne et al 2008
+"MB-88        Pyroxene-andesite beneath MB-89 (acp), 200 m E of Coleman Pinnacle",,145,15.85,0.23,15850,,14C,,St Helens,,,Clynne et al 2008
+"MB-89        Andesite of Coleman Pinnacle, S face of pinnacle, 6200' (hb andesite)",,146,15.97,0.18,15970,,14C,,St Helens,,,Clynne et al 2008
+"MB-16        Andesite of Black Buttes, high in Heliotrope Ridge stack, Hogback camp",,148,16.11,0.24,16110,,14C,,St Helens,,,Clynne et al 2008
+"MB-10        Andesite of Table Mountain, top flow of stack, top of Table Mountain",,149,16.15,0.23,16150,,14C,,St Helens,,,Clynne et al 2008
+USGS-684,,150,16.3,12.9,16300,,Ar,,St Helens,,,Clynne et al 2008
+MB-589,,151,16.435,0.335,16435,,14C,,St Helens,,,Clynne et al 2008
+MB-50,,155,16.75,0.8,16750,,14C,,St Helens,,,Clynne et al 2008
+W-2983,,160,17.8,2.7,17800,,Ar,,St Helens,,,Clynne et al 2008
+W-3141,,176,21.2,2.9,21200,,Ar,,St Helens,,,Clynne et al 2008
+"MB-43        Andesite of Mazama Park, S rim of Deming Glacier gorge, 5900'",,193,24,11,24000,,Ar,,St Helens,,,Clynne et al 2008
+"MB-294      Andesite of Roosevelt Glacier, atop Coleman/Roosevelt cleaver, 5100'",,213,27.9,1.7,27900,,Ar,,St Helens,,,Clynne et al 2008
+"MB-46        Andesite of Crag View, W wall of Crag View cleaver (Crag 6513)",,240,34.9,4.6,34900,,Ar,,St Helens,,,Clynne et al 2008
+"MB-632      Andesite of Glacier Creek, intracanyon flow, 3350' left-bank rim",,250,39.8,1.0,39800,,Ar,,St Helens,,,Clynne et al 2008
+"MB-458      Andesite of Roosevelt Glacier, thick flow, Glacier Creek, 3900'",,272,54,10,54000,,Ar,,St Helens,,,Clynne et al 2008
+"MB-524      Andesite of Mazama Park, gorge of Rocky Creek, 4400'",,293,74,11,74000,,Ar,,St Helens,,,Clynne et al 2008
+"MB-520      Andesite of Crag View, bed of middle fork of Sulphur Creek, 3760'",,311,91.5,24.2,91500,,Ar,,St Helens,,,Clynne et al 2008
+"MB-572      Andesite of Swift Creek, flow remnant on floor of Swift Creek, 1700' Mount Baker Stratovolcano",,326,107.4,39.2,107400,,Ar,,St Helens,,,Clynne et al 2008
+"MB-335      Andesite of Dobbs Creek, banked against Cougar Divide at Dobbs Creek Younger mafic outliers",,328,109,24,109000,,K-Ar,,St Helens,,,Clynne et al 2008
+"MB-232      Andesite of The Portals, Rainbow Creek slope of Landes Cleaver, 5200'",,332,113.8,40.8,113800,,Ar,,St Helens,,,Clynne et al 2008
+"MB-507      Andesite of Mazama Park, bed of Ridley Creek, 3700'",,352,147,37,147000,,Ar,,St Helens,,,Clynne et al 2008
+"MB-168      Andesite of Bar Creek, basal flow, E rim of Bar Creek gorge, 4300'",,362,160,8.8,160000,,Ar,,St Helens,,,Clynne et al 2008
+"MB-402      Andesite of Boulder Glacier, upper stack of flows, SW rim Park Creek",,404,247,12,247000,,Ar,,St Helens,,,Clynne et al 2008
+"MB-39        Andesite of Boulder Glacier, lowest flow exposed just below glacier snout",,407,263,19,263000,,Ar,,St Helens,,,Clynne et al 2008
+"MB-175B    Basalt of Lake Shannon, roadcut atop knob 1760+, 1 km S of Rocky Creek Boulder Ridge lavas",,409,269,13,269000,,Ar,,St Helens,,,Clynne et al 2008
+"MB-92        Andesite of Excelsior Mine, remnant at knob 2459, W of Wells Creek",,420,296,7,296000,,K-Ar,,St Helens,,,Clynne et al 2008
+MB-615,,115,13.5,0,13500,,,,Thielsen Reach,,,Watt et al 2013
+"MB-67        Andesite of Rankin Creek, basal flow of stack, 3800' roadcut",,116,13.5,0,13500,,,,Thielsen Reach,,,Watt et al 2013
+MB-276B,,88,11.0,0,11000,49.8,Ar,bes,Three Sisters,,,Calvert et al 2018
+,,266,50.0,0,50000,50.1,Ar,bss,Three Sisters,,,Calvert et al 2018
+,,296,75.0,0,75000,50.1,Ar,bwm,Three Sisters,,,Calvert et al 2018
+,,377,190.0,0,190000,50.8,Ar,bwl,Three Sisters,,,Calvert et al 2018
+MB-212,,94,12.0,0,12000,51.1,Ar,bsl,Three Sisters,,,Calvert et al 2018
+,,347,140.0,0,140000,51.1,Ar,bnf,Three Sisters,,,Calvert et al 2018
+"MB-93        Andesite of Thompson Creek, W wall upper Thompson Creek, 4800'",,80,10.0,0,10000,51.2,Ar,bbr,Three Sisters,,,Calvert et al 2018
+,,422,300.0,0,300000,51.4,Ar,bbd,Three Sisters,,,Calvert et al 2018
+,,413,283.7,5.6,283700,51.5,Ar,bsb,Three Sisters,,,Calvert et al 2018
+,,357,150.4,4.4,150400,51.6,Ar,bjc,Three Sisters,,,Calvert et al 2018
+"MB-91        Andesite of Lookout Mountain, 1.1 km SW of summit, 4120' roadcut",,77,9.5,0,9500,51.7,Ar,bcc,Three Sisters,,,Calvert et al 2018
+MB-500,,157,17.0,0,17000,51.7,Ar,btk,Three Sisters,,,Calvert et al 2018
+,,382,200.0,0,200000,51.7,Ar,bwy,Three Sisters,,,Calvert et al 2018
+,,172,20.5,0,20500,52.0,Ar,mmt,Three Sisters,,,Calvert et al 2018
+,,483,540.8,7.4,540800,52.1,Ar,mtb,Three Sisters,,,Calvert et al 2018
+,,381,200.0,0,200000,52.5,Ar,bhs,Three Sisters,,,Calvert et al 2018
+,,264,48.9,5.9,48900,52.6,Ar,mlb,Three Sisters,,,Calvert et al 2018
+,,359,151.5,4.9,151500,52.8,Ar,mth,Three Sisters,,,Calvert et al 2018
+"MB-640      Andesite of Lava Divide, basal flow Park Creek wall (see MB-615 below)",,70,8.0,0,8000,52.9,Ar,mec,Three Sisters,,,Calvert et al 2018
+,,291,74.0,0,74000,52.9,Ar,mey,Three Sisters,,,Calvert et al 2018
+,,423,300.0,0,300000,52.9,Ar,mbw,Three Sisters,,,Calvert et al 2018
+,,320,100.0,0,100000,53.0,Ar,myw,Three Sisters,,,Calvert et al 2018
+,,372,183.9,21.1,183900,53.0,Ar,mdl,Three Sisters,,,Calvert et al 2018
+,,281,65.0,0,65000,53.1,Ar,mys,Three Sisters,,,Calvert et al 2018
+,,342,130.1,6.7,130100,53.1,Ar,bac,Three Sisters,,,Calvert et al 2018
+,,379,197.9,5.1,197900,53.2,Ar,mwh,Three Sisters,,,Calvert et al 2018
+,,170,20.5,4,20500,53.3,Ar,mmi,Three Sisters,,,Calvert et al 2018
+,,267,50.0,0,50000,53.3,Ar,mkm,Three Sisters,,,Calvert et al 2018
+,,292,74.0,0,74000,53.3,Ar,mst,Three Sisters,,,Calvert et al 2018
+,,171,20.5,11.9,20500,53.4,Ar,mms,Three Sisters,,,Calvert et al 2018
+,,285,68.2,4.2,68200,53.4,Ar,mhr,Three Sisters,,,Calvert et al 2018
+,,307,90.0,0,90000,53.5,Ar,mmc,Three Sisters,,,Calvert et al 2018
+,,463,380.1,6.1,380100,53.6,Ar,mtw,Three Sisters,,,Calvert et al 2018
+,,185,22.7,13.1,22700,53.8,Ar,mtp,Three Sisters,,,Calvert et al 2018
+,,259,47.0,5.7,47000,53.8,Ar,mns,Three Sisters,,,Calvert et al 2018
+,,305,84.5,24.9,84500,53.9,Ar,mns,Three Sisters,,,Calvert et al 2018
+,,364,169.1,16.3,169100,54.0,Ar,msf,Three Sisters,,,Calvert et al 2018
+MB-145,,95,12.0,0,12000,54.2,Ar,msb,Three Sisters,,,Calvert et al 2018
+,,263,48.5,9.7,48500,54.2,Ar,mnf,Three Sisters,,,Calvert et al 2018
+,,297,75.0,0,75000,54.2,Ar,myl,Three Sisters,,,Calvert et al 2018
+,,344,131.3,5.9,131300,54.2,Ar,msp,Three Sisters,,,Calvert et al 2018
+MB-356,,73,9.0,0,9000,54.5,Ar,mlc,Three Sisters,,,Calvert et al 2018
+,,168,20.0,0,20000,54.6,Ar,mmn,Three Sisters,,,Calvert et al 2018
+,,183,22.0,6.2,22000,54.6,Ar,mrg,Three Sisters,,,Calvert et al 2018
+,,368,177.5,2.9,177500,54.6,Ar,mws,Three Sisters,,,Calvert et al 2018
+93RW-78,,167,20.0,0,20000,54.8,Ar,mml,Three Sisters,,,Calvert et al 2018
+,,247,37.4,9.1,37400,54.8,Ar,mhd,Three Sisters,,,Calvert et al 2018
+,,289,71.7,3.3,71700,54.8,Ar,mns,Three Sisters,,,Calvert et al 2018
+,,277,59.8,3.7,59800,54.9,Ar,mwa,Three Sisters,,,Calvert et al 2018
+,,169,20.0,0,20000,55.1,Ar,mpn,Three Sisters,,,Calvert et al 2018
+,,216,28.3,0,28300,55.1,Ar,mhl,Three Sisters,,,Calvert et al 2018
+,,340,121.3,5.7,121300,55.1,Ar,mns,Three Sisters,,,Calvert et al 2018
+,,356,150.0,0,150000,55.1,Ar,mls,Three Sisters,,,Calvert et al 2018
+,,173,20.6,4.7,20600,55.3,Ar,mnt,Three Sisters,,,Calvert et al 2018
+,,383,200.0,0,200000,55.5,Ar,mbt,Three Sisters,,,Calvert et al 2018
+,,318,100.0,0,100000,55.9,Ar,mbc,Three Sisters,,,Calvert et al 2018
+,,319,100.0,0,100000,55.9,Ar,mpm,Three Sisters,,,Calvert et al 2018
+"MB-81        Andesite of Iceberg Lake, NE-facing scarp 100 m W of lake",,34,2.5,0,2500,56.0,Ar,myc,Three Sisters,,,Calvert et al 2018
+93RE-15,,161,18.0,0,18000,56.1,Ar,mss,Three Sisters,,,Calvert et al 2018
+,,188,23.5,16.1,23500,56.5,Ar,mcl ,Three Sisters,,,Calvert et al 2018
+,,206,27.5,3.3,27500,56.5,Ar,aeg,Three Sisters,,,Calvert et al 2018
+,,268,50.0,0,50000,56.5,Ar,mwy,Three Sisters,,,Calvert et al 2018
+,,175,21.0,7,21000,56.6,Ar,mmm,Three Sisters,,,Calvert et al 2018
+,,280,65.0,0,65000,56.6,Ar,mfy,Three Sisters,,,Calvert et al 2018
+,,181,21.8,5.6,21800,56.8,Ar,msc,Three Sisters,,,Calvert et al 2018
+,,201,25.4,0,25400,56.8,Ar,mps,Three Sisters,,,Calvert et al 2018
+,,370,180.0,0,180000,56.8,Ar,mdw,Three Sisters,,,Calvert et al 2018
+,,179,21.5,5.6,21500,57.1,Ar,mnh,Three Sisters,,,Calvert et al 2018
+,,202,25.6,2.2,25600,57.5,Ar,awa,Three Sisters,,,Calvert et al 2018
+,,369,180.0,0,180000,57.7,Ar,acp,Three Sisters,,,Calvert et al 2018
+,,184,22.5,3.4,22500,57.9,Ar,ahl,Three Sisters,,,Calvert et al 2018
+,,177,21.4,6.4,21400,58.0,Ar,anh,Three Sisters,,,Calvert et al 2018
+,,186,23.5,0,23500,60.0,Ar,awm,Three Sisters,,,Calvert et al 2018
+,,194,24.1,1.3,24100,60.0,Ar,awf,Three Sisters,,,Calvert et al 2018
+,,260,47.1,3.8,47100,60.1,Ar,aoc,Three Sisters,,,Calvert et al 2018
+,,222,30.5,0,30500,60.4,Ar,ahc,Three Sisters,,,Calvert et al 2018
+,,205,27.0,6.4,27000,60.5,Ar,ahi,Three Sisters,,,Calvert et al 2018
+"MB-99        Andesite of Lasiocarpa Ridge, knob 5400 on ridgecrest",,16,1.5,0,1500,61.0,Ar,acc,Three Sisters,,,Calvert et al 2018
+,,187,23.5,0,23500,61.3,Ar,awr,Three Sisters,,,Calvert et al 2018
+,,196,24.6,1.1,24600,61.3,Ar,adl,Three Sisters,,,Calvert et al 2018
+,,427,303.8,1.4,303800,61.3,Ar,awy,Three Sisters,,,Calvert et al 2018
+,,197,24.9,4.3,24900,61.5,Ar,asw,Three Sisters,,,Calvert et al 2018
+,,226,31.9,8.8,31900,61.6,Ar,apc,Three Sisters,,,Calvert et al 2018
+,,238,34.6,0,34600,61.6,Ar,aph,Three Sisters,,,Calvert et al 2018
+,,239,34.6,0,34600,61.6,Ar,aph',Three Sisters,,,Calvert et al 2018
+,,237,34.5,0,34500,61.7,Ar,asn,Three Sisters,,,Calvert et al 2018
+,,208,27.6,1,27600,61.9,Ar,alc,Three Sisters,,,Calvert et al 2018
+,,223,30.9,1.3,30900,62.0,Ar,alh,Three Sisters,,,Calvert et al 2018
+,,189,23.8,1.7,23800,62.1,Ar,awc,Three Sisters,,,Calvert et al 2018
+,,211,27.7,1.1,27650,62.2,Ar,alg,Three Sisters,,,Calvert et al 2018
+,,209,27.6,0,27600,62.4,Ar,als,Three Sisters,,,Calvert et al 2018
+,,200,25.4,0,25400,62.6,Ar,dbl,Three Sisters,,,Calvert et al 2018
+,,207,27.6,0,27600,62.6,Ar,adh,Three Sisters,,,Calvert et al 2018
+,,248,37.6,0,37600,62.7,Ar,aef,Three Sisters,,,Calvert et al 2018
+,,477,460.0,0,460000,62.8,Ar,dtl,Three Sisters,,,Calvert et al 2018
+,,190,23.9,0,23900,62.9,Ar,des,Three Sisters,,,Calvert et al 2018
+,,191,23.9,1.1,23900,63.1,Ar,dnt,Three Sisters,,,Calvert et al 2018
+,,225,31.2,2.6,31200,63.3,Ar,dcg,Three Sisters,,,Calvert et al 2018
+95RE-465,,165,19.4,1.7,19400,63.6,Ar,dhr,Three Sisters,,,Calvert et al 2018
+,,199,25.3,1.5,25300,63.6,Ar,dlg,Three Sisters,,,Calvert et al 2018
+,,371,181.0,1.1,181000,63.6,Ar,abt,Three Sisters,,,Calvert et al 2018
+,,198,24.9,3.2,24900,63.7,Ar,dss,Three Sisters,,,Calvert et al 2018
+,,210,27.6,0,27600,63.9,Ar,dwl,Three Sisters,,,Calvert et al 2018
+,,217,28.5,0,28500,63.9,Ar,dgl,Three Sisters,,,Calvert et al 2018
+93RE-163,,162,18.7,2.2,18700,64.0,Ar,dbh,Three Sisters,,,Calvert et al 2018
+,,234,34.2,1.2,34200,64.0,Ar,dml,Three Sisters,,,Calvert et al 2018
+MB-316,,138,14.6,2.7,14600,64.2,Ar,dig,Three Sisters,,,Calvert et al 2018
+,,219,29.2,0.8,29200,64.3,Ar,drm,Three Sisters,,,Calvert et al 2018
+,,231,32.9,2,32900,64.3,Ar,ddl,Three Sisters,,,Calvert et al 2018
+,,178,21.5,3.8,21500,64.4,Ar,dsn,Three Sisters,,,Calvert et al 2018
+,,235,34.2,3.4,34200,64.5,Ar,dwp,Three Sisters,,,Calvert et al 2018
+,,220,30.0,0,30000,64.6,Ar,dmw,Three Sisters,,,Calvert et al 2018
+,,232,32.9,0,32900,64.6,Ar,dpg,Three Sisters,,,Calvert et al 2018
+,,358,151.0,0,151000,65.1,Ar,dmc,Three Sisters,,,Calvert et al 2018
+,,229,32.1,2,32100,65.2,Ar,dgc,Three Sisters,,,Calvert et al 2018
+,,180,21.8,1.9,21800,65.3,Ar,dlp,Three Sisters,,,Calvert et al 2018
+MB-493,,159,17.1,15.6,17100,65.4,Ar,dsw,Three Sisters,,,Calvert et al 2018
+,,204,26.4,2.1,26400,65.4,Ar,dcl,Three Sisters,,,Calvert et al 2018
+95RE-466,,164,19.0,0,19000,65.7,Ar,dms,Three Sisters,,,Calvert et al 2018
+,,215,28.2,1,28200,65.7,Ar,dmn,Three Sisters,,,Calvert et al 2018
+,,221,30.0,0,30000,66.2,Ar,dse,Three Sisters,,,Calvert et al 2018
+,,218,28.5,0,28500,66.8,Ar,dlc,Three Sisters,,,Calvert et al 2018
+,,214,28.0,1.8,28000,67.1,Ar,dcn,Three Sisters,,,Calvert et al 2018
+,,233,33.4,1.5,33400,68.4,Ar,rpg,Three Sisters,,,Calvert et al 2018
+,,366,172.2,2.1,172200,69.1,Ar,ruc,Three Sisters,,,Calvert et al 2018
+,,399,225.0,0,225000,70.1,Ar,rsg,Three Sisters,,,Calvert et al 2018
+,,230,32.4,0.7,32400,72.2,Ar,rgl,Three Sisters,,,Calvert et al 2018
+,,262,48.2,15.3,48200,72.4,Ar,rmc,Three Sisters,,,Calvert et al 2018
+,,227,31.9,8.7,31900,72.5,Ar,rpc,Three Sisters,,,Calvert et al 2018
+"MB-225      Dacite of Cougar Divide, NW nose of Cougar Divide, 4600' rim Oldest unaltered intracaldera andesitic lava flow",,20,2.0,0,2000,72.6,Ar,rdc,Three Sisters,,,Calvert et al 2018
+,,195,24.4,7.8,24400,72.9,Ar,rct,Three Sisters,,,Calvert et al 2018
+,,203,25.8,1.3,25800,73.3,Ar,rsc,Three Sisters,,,Calvert et al 2018
+,,269,51.4,9.7,51400,73.3,Ar,rsw,Three Sisters,,,Calvert et al 2018
+"MB-52        Basalt of Park Butte, E shoulder of Park Butte, 400 m E of lookout cabin",,27,2.3,0,2300,73.4,Ar,rrm,Three Sisters,,,Calvert et al 2018
+,,224,31.0,5.4,31000,73.6,Ar,rkb,Three Sisters,,,Calvert et al 2018
+,,244,35.6,2.7,35600,73.8,Ar,rse,Three Sisters,,,Calvert et al 2018
+,,243,35.4,1.5,35400,74.0,Ar,rdh,Three Sisters,,,Calvert et al 2018
+,,246,36.4,2,36400,74.0,Ar,rsf,Three Sisters,,,Calvert et al 2018
+,,253,41.1,1.4,41100,74.0,Ar,r58,Three Sisters,,,Calvert et al 2018
+,,249,38.4,1.8,38400,76.5,Ar,roc,Three Sisters,,,Calvert et al 2018
+,,274,55.9,5.4,55900,54.0,Ar,mns,Three Sisters,,,Calvert et al 2018
+,,212,27.8,2.6,27800,62.5,Ar,dkb,Three Sisters,,,Calvert et al 2018
+,,10,0.8,0,800,,,,Three Sisters,,,Watt et al 2013
+,,21,2,0,2000,,,,Three Sisters,,,Watt et al 2013
+,,22,2,0,2000,,,,Three Sisters,,,Watt et al 2013
+,,25,2.2,0,2200,,,,Three Sisters,,,Watt et al 2013
+,,26,2.2,0,2200,,,,Three Sisters,,,Watt et al 2013
+,,36,2.6,0,2600,,,,Three Sisters,,,Watt et al 2013
+,,37,2.7,0,2700,,,,Three Sisters,,,Watt et al 2013
+,,39,2.8,0,2800,,,,Three Sisters,,,Watt et al 2013
+,,40,2.9,0,2900,,,,Three Sisters,,,Watt et al 2013
+,,41,3.5,0,3500,,,,Three Sisters,,,Watt et al 2013
+,,51,5.5,0,5500,,,,Three Sisters,,,Watt et al 2013
+,,71,8,0,8000,,,,Three Sisters,,,Watt et al 2013
+,,90,11,0,11000,,,,Three Sisters,,,Watt et al 2013
+,,99,12.5,0,12500,,,,Three Sisters,,,Watt et al 2013
+,,105,13,0,13000,,,,Three Sisters,,,Watt et al 2013
+,,130,14,0,14000,,,,Three Sisters,,,Watt et al 2013
+,,136,14.5,0,14500,,,,Three Sisters,,,Watt et al 2013
+,,140,15,0,15000,,,,Three Sisters,,,Watt et al 2013
+,,141,15,0,15000,,,,Three Sisters,,,Watt et al 2013
+,,152,16.5,0,16500,,,,Three Sisters,,,Watt et al 2013
+,,153,16.5,0,16500,,,,Three Sisters,,,Watt et al 2013
+,,154,16.5,0,16500,,,,Three Sisters,,,Watt et al 2013
+,,46,5,0,5000,,,,Wickiup Reach,,,Watt et al 2013
+,,47,5,0,5000,,,,Wickiup Reach,,,Watt et al 2013
+,,48,5,0,5000,,,,Wickiup Reach,,,Watt et al 2013
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
