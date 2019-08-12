@@ -7,6 +7,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
 This RMD file is built for the synthetic data simulation for the glaicial-volcanism interaction project by Emily Mixon and Shan Ye. You can run each block of R codes by clicking on the green triangle on the top right of that block.
@@ -128,7 +129,7 @@ Click the green triangle, and you will set up a function that can:
 2) Conduct the Monte Carlo simulation by filtering the synthetic data based on your options (also will be specified in the next step)
 
 ```{r}
-mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_uncertainty, degla1_begin, degla1_end, degla2_begin, degla2_end, small, gap){
+mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_uncertainty, degla1_begin, degla1_end, degla2_begin, degla2_end, small, gap, plot){
   
   require(stringdist)
   
@@ -146,6 +147,8 @@ mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_un
   t3 <- degla2_begin
   t4 <- degla2_end
   #type <-"linear"
+  cascades<-read.csv(file="realData/cascades_simp.csv", header=TRUE, sep=",")
+  svz<-read.csv(file="realData/svz_simp.csv", header=TRUE, sep=",")
   
   # Initiating the output data frame
   output <- data.frame(ka = c(1:180))
@@ -178,25 +181,56 @@ mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_un
 
     }
     # plot
-    maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type:", type)
-    subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
-    last <- run + 1
-    plot <- ggplot()
-    for(i in 2:last){
-      gg.data <- data.frame(Time=output[,1], Events=output[,i])
-      plot<- plot+
-        geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05) 
-    }
     
-    plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
-      ggtitle(maint, subt) +
-      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+    if(plot==0){
+        maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type:", type)
+        subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
+        last <- run + 1
+        plot <- ggplot()
+        for(i in 2:last){
+              gg.data <- data.frame(Time=output[,1], Events=output[,i])
+              plot<- plot+
+              geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05) 
+            }
+    
+        plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
+        ggtitle(maint, subt) +
+        theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
             panel.background = element_blank(), axis.line = element_line(colour = "black"))+
-      scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 35))+
-      labs(y = "Counts",
-           x = "Time (Years BP)",
-           colour = "Parameter")
-    print(plot)
+        scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 40))+
+        labs(y = "Counts",
+            x = "Time (Years BP)",
+            colour = "Parameter")
+        print(plot)
+    } else {
+        maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type:", type)
+        subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
+        last <- run + 1
+        plot <- ggplot()
+        for(i in 2:last){
+              gg.data <- data.frame(Time=output[,1], Events=output[,i])
+              plot<- plot+
+              geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05)+
+              geom_freqpoly(data=cascades, aes(x=ka, colour="Cascades"), bins=180)+
+              geom_freqpoly(data=svz, aes(x=ka, colour="SVZ"), bins=180)+
+              scale_colour_manual(values = c(
+                'Cascades' = 'black',
+                'SVZ' = 'light blue'))
+            }
+    
+        plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
+        ggtitle(maint, subt) +
+        theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            panel.background = element_blank(), axis.line = element_line(colour = "black"),
+            legend.key = element_rect(colour = "white", fill = NA))+
+        scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 40))+
+        labs(y = "Counts",
+            x = "Time (Years BP)",
+            colour = "Real World Data")
+        print(plot)
+          
+        }
+
     
     # return data
     return(output)
@@ -228,29 +262,56 @@ mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_un
       names(output)[mc+1] <- paste("Simu",toString(mc), sep = " ", collapse = NULL)
       
     }
+    
     # plot
-    maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type:", type, "proportional")
-    subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
-    last <- run + 1
-    plot <- ggplot()
-    for(i in 2:last){
-      gg.data <- data.frame(Time=output[,1], Events=output[,i])
-      plot<- plot+
-        geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05) 
+    if(plot==0){
+       maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type:", type, "proportional")
+      subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
+      last <- run + 1
+      plot <- ggplot()
+      for(i in 2:last){
+        gg.data <- data.frame(Time=output[,1], Events=output[,i])
+        plot<- plot+
+          geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05) 
+      }
+    
+      plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
+        ggtitle(maint, subt) +
+        theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+              panel.background = element_blank(), axis.line = element_line(colour = "black"),
+              legend.key = element_rect(colour = "white", fill = NA))+
+        scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 40))+
+        labs(y = "Counts",
+            x = "Time (Ka BP)",
+            colour = "Parameter")
+      print(plot)
+    } else {
+       maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type:", type, "proportional")
+      subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
+      last <- run + 1
+      plot <- ggplot()
+      for(i in 2:last){
+        gg.data <- data.frame(Time=output[,1], Events=output[,i])
+        plot<- plot+
+          geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05)+
+          geom_freqpoly(data=cascades, aes(x=ka, colour="Cascades"), bins=180)+
+          geom_freqpoly(data=svz, aes(x=ka, colour="SVZ"), bins=180)+
+          scale_colour_manual(values = c(
+            'Cascades' = 'black',
+            'SVZ' = 'light blue'))
+      }
+    
+      plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
+        ggtitle(maint, subt) +
+        theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+              panel.background = element_blank(), axis.line = element_line(colour = "black"),
+              legend.key = element_rect(colour = "white", fill = NA))+
+        scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 40))+
+        labs(y = "Counts",
+            x = "Time (Ka BP)",
+            colour = "Real World Data")
+      print(plot)
     }
-    
-    plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
-      ggtitle(maint, subt) +
-      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-            panel.background = element_blank(), axis.line = element_line(colour = "black"))+
-      scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 35))+
-      labs(y = "Counts",
-           x = "Time (Years BP)",
-           colour = "Parameter")
-    print(plot)
-    
-    # return data
-    return(output)
 
   } else if (type %in% "log"){
     
@@ -283,25 +344,55 @@ mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_un
       
     }
     # plot
-    maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type: natural", type)
-    subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
-    last <- run + 1
-    plot <- ggplot()
-    for(i in 2:last){
-      gg.data <- data.frame(Time=output[,1], Events=output[,i])
-      plot<- plot+
-        geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05) 
-    }
     
-    plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
-      ggtitle(maint, subt) +
-      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-            panel.background = element_blank(), axis.line = element_line(colour = "black"))+
-      scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 35))+
-      labs(y = "Counts",
-           x = "Time (Years BP)",
-           colour = "Parameter")
-    print(plot)
+    if(plot==0){
+          maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type: natural", type)
+          subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
+          last <- run + 1
+          plot <- ggplot()
+          for(i in 2:last){
+              gg.data <- data.frame(Time=output[,1], Events=output[,i])
+              plot<- plot+
+              geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05) 
+            }
+    
+          plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
+          ggtitle(maint, subt) +
+          theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+              panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+              scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 40))+
+              labs(y = "Counts",
+                   x = "Time (Ka BP)",
+                  colour = "Parameter")
+          print(plot)
+    } else {
+          maint <- paste("Synthetic data simulation for", toString(run), "times. Fitting type: natural", type)
+          subt <- paste("Assuming that", toString(p*100), "% of data are preserved at 180 ka. Background:", toString(bg), "events/ka; Peak:", toString(pk), "events/ka")
+          last <- run + 1
+          plot <- ggplot()
+          for(i in 2:last){
+              gg.data <- data.frame(Time=output[,1], Events=output[,i])
+              plot<- plot+
+              geom_line(data=gg.data, aes(x=Time, y=Events),size = 0.5, colour="#A67C94", alpha = 0.05)+
+              geom_freqpoly(data=cascades, aes(x=ka, colour="Cascades"), bins=180)+
+              geom_freqpoly(data=svz, aes(x=ka, colour="SVZ"), bins=180)+
+              scale_colour_manual(values = c(
+                'Cascades' = 'black',
+                'SVZ' = 'light blue'))
+            }
+    
+          plot <- plot + scale_x_reverse(limits = c(180, 0.1),breaks = scales::pretty_breaks(n = 9)) +
+          ggtitle(maint, subt) +
+          theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+              panel.background = element_blank(), axis.line = element_line(colour = "black"),
+              legend.key = element_rect(colour = "white", fill = NA))+
+              scale_y_continuous(name = expression("Number of Volcanic Events per 1000 Years"), limits = c(0, 40))+
+              labs(y = "Counts",
+                   x = "Time (Ka BP)",
+                  colour = "Real World Data")
+          print(plot)
+    }
+
     
     # return data
     return(output)
@@ -320,11 +411,11 @@ mc_syn <- function(type, p, run, background, background_sd, peak, peak_sd, ar_un
 Here we can call the mc_syn() function to run the Monte Carlo Simulation with options of inputs
 Arguments for the function:
 
-# mc_syn(type, prob, runtime, background, background_sd, peak, peak_sd, ar_uncertainty, degla1_begin, degla1_end, degla2_begin, degla2_end, small)
+# mc_syn(type, prob, runtime, background, background_sd, peak, peak_sd, ar_uncertainty, degla1_begin, degla1_end, degla2_begin, degla2_end, small, gap, plot)
 
 The type should be a string (so put it in ""). It indicates the fitting curve. Currently we have 3 options: "linear" for a linear curve, "log" for a natural log curver, and "inverse" for an inversed proportional curve.
 
-The prob is your assumption for the probability that a record is KEPT at 180 ka. It should be a double variable between 0 and 1.
+The prob is your assumpon for the probability that a record is KEPT at 180 ka. It should be a double variable between 0 and 1.
 
 Runtime is an integer telling the number of simulations to run in the Monte Carlo simulation.
 
@@ -348,18 +439,23 @@ The small determains whether a secondary signal would be added after those two m
 
 The gap is the time gap between major signals and secondary signals (recommend: 5). If the small is 0, then this parameter does not matter.
 
+The plot parameter is either 0 or 1. When it is set to 1, real world data from the Cascades and SVZ would be added to the plot.
+
 Also, you need to assign a data frame to receive the simulated data returned from the function. See examples below.
 
 ## examples
-linearDF <- mc_syn("linear", 0.25, 100, 5, 2, 30, 2.5, 0.1, 127, 123, 18, 14, 0, 5)
-invereseDF <- mc_syn("inverse", 0.1, 100, 5, 2, 25, 2.5, 0.05, 128, 124, 18, 14, 1, 4)
-logDF <- mc_syn("log", 0.25, 100, 3, 1.5, 30, 2, 0.08, 127, 123, 18, 14, 1, 5)
-errorExample <- mc_syn("shan", 0.25, 100, 10, 2, 30, 3, 0.03, 127, 123, 18, 12, 0, 5)
+linearDF <- mc_syn("linear", 0.25, 100, 5, 2, 30, 2.5, 0.1, 127, 123, 18, 14, 0, 5, 1)
+invereseDF <- mc_syn("inverse", 0.1, 100, 5, 2, 25, 2.5, 0.05, 128, 124, 18, 14, 1, 4, 1)
+logDF <- mc_syn("log", 0.25, 100, 3, 1.5, 30, 2, 0.08, 127, 123, 18, 14, 1, 5, 0)
+errorExample <- mc_syn("shan", 0.25, 100, 10, 2, 30, 3, 0.03, 127, 123, 18, 12, 0, 5, 1)
 
 Change the line of code below based on your option, and click the green triangle. Note: you have to run those 2 previous blocks before running the following one. You will find the result in a plot below, and a data frame in the Environment section of the RStudio interface.
 
 ```{r}
-result <- mc_syn("log", 0.2, 500, 5, 2, 30, 2.5, 0.1, 127, 123, 18, 14, 1, 5)
+setwd("~/Documents/github/synthetic_svz")
+# Set the working directory to one level above the folder containing real world data csv files
+
+result <- mc_syn("log", 0.2, 100, 5, 2, 30, 2.5, 0.1, 127, 123, 18, 14, 1, 5, 1)
 
 
 ```
