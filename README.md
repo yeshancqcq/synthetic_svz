@@ -22,5 +22,6 @@ Options include:
 9. Manually define deglaciation periods (Recommended: 123 - 127 ka and 14 - 18 ka)
 10. Whether to add the secondary signal following major signals (as observed in real-world data)
 11. The gap between major signals and corresponding secondary signals (recommended: 5 ka).
+12. Whether to plot real world data from SVZ and Cascades along with the generated data.
 
 Please install stringdist and ggplot2 before running it.
