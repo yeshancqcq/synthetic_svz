@@ -4,9 +4,10 @@ author: "Shan Ye"
 date: "July 24, 2019"
 output: html_document
 ---
+## Run this block first to suppress plotting warnings (they are generated when the synthetic data generates an 0, which is acceptable in our case)
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 
 ```
 
