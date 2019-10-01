@@ -29,3 +29,6 @@ Options include:
 Please install stringdist and ggplot2 before running it.
 
 Real world data are saved in the realData folder. If you want to use this function, you need to download data in this folder a d save them in a folder with the same name (realData) on your local machine. Then, in the line of setwd in the last block of the rmd file, change the directory to one level above this folder. 
+
+To get the background activities without having any signals, just set the mean numbers and standard errors of signal periods to be the same as those of background periods.
+
