@@ -4,7 +4,9 @@ Synthetic data simulation for the SVZ volcano-glacier interaction study
 Emily Mixon & Shan Ye
 
 Please download the RMD file:
-https://github.com/yeshancqcq/synthetic_svz/blob/master/synthetic%20dataset/synthetic.rmd
+https://github.com/yeshancqcq/synthetic_svz/blob/master/synthetic%20dataset/synthetic.rmd 
+or
+https://github.com/yeshancqcq/synthetic_svz/blob/master/synthetic%20dataset/synthetic_sp.rmd (for separated Ar and 14C real world data)
 
 And open it in your RStudio to run simulations.
 
