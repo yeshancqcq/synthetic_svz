@@ -453,7 +453,7 @@ The small determains whether a secondary signal would be added after those two m
 
 The gap is the time gap between major signals and secondary signals (recommend: 5). If the small is 0, then this parameter does not matter.
 
-The plot parameter is either 0 or 1. When it is set to 1, real world data from the Cascades and SVZ would be added to the plot.
+The plot parameter is either 0 or 1. When it is set to 1, real world data from the Cascades and SVZ (both Ar and 14C) would be added to the plot.
 
 Also, you need to assign a data frame to receive the simulated data returned from the function. See examples below.
 
