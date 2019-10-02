@@ -469,7 +469,7 @@ Change the line of code below based on your option, and click the green triangle
 setwd("~/Documents/github/synthetic_svz")
 # Set the working directory to one level above the folder containing real world data csv files
 
-result <- mc_syn("log", 0.2, 100, 7, 2, 30, 2.5, 0.1, 127, 123, 18, 14, 1, 5, 1)
+result <- mc_syn("log", 0.3, 100, 7, 2, 30, 2.5, 0.1, 127, 123, 18, 14, 1, 5, 1)
 
 
 ```
